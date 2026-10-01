@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedChat AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z" fill="currentColor"/></svg>
+      </span>
+      <div>
+        <h1>MedChat <span>AI</span></h1>
+        <p class="tagline">Plain-language health information, with the medical terms called out.</p>
+      </div>
+    </div>
+    <div class="status" id="status" title="Model connection">
+      <span class="dot"></span><span id="status-text">Connecting…</span>
+    </div>
+  </header>
+
+  <div class="disclaimer" role="note">
+    MedChat gives general information, not a diagnosis or treatment plan. In an emergency, call <strong>911</strong> or your local emergency number.
+  </div>
+
+  <main class="layout">
+    <section class="chat" aria-label="Conversation">
+      <div class="messages" id="messages" aria-live="polite">
+        <div class="welcome" id="welcome">
+          <h2>What would you like to understand?</h2>
+          <p>Ask about a symptom, condition, test result or medication. MedChat explains it in plain language and highlights the medical terms it recognized in your question.</p>
+          <div class="suggestions" id="suggestions">
+            <button type="button">What does an A1c of 6.8 mean for type 2 diabetes?</button>
+            <button type="button">Can I take ibuprofen while on blood thinners?</button>
+            <button type="button">I have a cough and sore throat but no fever. Should I see someone?</button>
+            <button type="button">What is the difference between a CT scan and an MRI?</button>
+          </div>
+        </div>
+      </div>
+
+      <form class="composer" id="composer">
+        <label for="input" class="sr-only">Your question</label>
+        <textarea id="input" rows="1" maxlength="2000" placeholder="Ask a health question…" autocomplete="off"></textarea>
+        <div class="composer-footer">
+          <span class="counter" id="counter">0 / 2000</span>
+          <div class="actions">
+            <button type="button" class="ghost" id="clear">New chat</button>
+            <button type="submit" class="send" id="send" disabled>Send</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <aside class="terms-panel" aria-label="Recognized medical terms">
+      <div class="panel-head">
+        <h2>Recognized terms</h2>
+        <span class="count" id="term-count">0</span>
+      </div>
+      <p class="panel-sub">From your latest question. Hover or tap a term for its definition.</p>
+      <ul class="legend">
+        <li><i class="c-condition"></i>Condition</li>
+        <li><i class="c-symptom"></i>Symptom</li>
+        <li><i class="c-medication"></i>Medication</li>
+        <li><i class="c-test"></i>Test</li>
+        <li><i class="c-procedure"></i>Procedure</li>
+        <li><i class="c-anatomy"></i>Anatomy</li>
+      </ul>
+      <div id="term-list" class="term-list">
+        <p class="empty">Terms will appear here after you ask a question.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

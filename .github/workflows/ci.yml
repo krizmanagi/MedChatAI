@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-dev.txt
+      - name: Unit and API tests
+        run: pytest -q
+      - name: Terminology evaluation (dev + held-out)
+        run: |
+          python -m eval.evaluate --dataset eval/dataset.jsonl --out eval/results
+          python -m eval.evaluate --dataset eval/holdout.jsonl --out eval/results/holdout
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evaluation-report
+          path: eval/results

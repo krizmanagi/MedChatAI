@@ -1,0 +1,40 @@
+{"id": "h001", "text": "been getting really bad heartburn every night after dinner, tums arent helping anymore", "expected": ["heartburn", "antacid"], "negated": [], "out_of_lexicon": [], "tags": ["lay", "informal"]}
+{"id": "h002", "text": "my husband snores and stops breathing at night, my friend said thats sleep apnoea?", "expected": ["sleep_apnea"], "negated": [], "out_of_lexicon": ["snoring", "apnea episodes"], "tags": ["lay", "spelling_variant"]}
+{"id": "h003", "text": "Is zoloft ok to take while pregnant", "expected": ["antidepressant"], "negated": [], "out_of_lexicon": ["pregnancy"], "tags": ["brand", "informal"]}
+{"id": "h004", "text": "the nurse said my pulse ox was 91 and my pulse was 110", "expected": ["heart_rate"], "negated": [], "out_of_lexicon": ["pulse oximetry"], "tags": ["lab"]}
+{"id": "h005", "text": "what happens if you miss a dose of eliquis", "expected": ["anticoagulant"], "negated": [], "out_of_lexicon": [], "tags": ["brand"]}
+{"id": "h006", "text": "70yo F w/ CHF exacerbation, bilateral LE edema, SOB on exertion", "expected": ["heart_failure", "edema", "shortness_of_breath"], "negated": [], "out_of_lexicon": [], "tags": ["clinical", "abbreviation"]}
+{"id": "h007", "text": "Can stress give you a stomachache and loose stools?", "expected": ["abdominal_pain", "diarrhea"], "negated": [], "out_of_lexicon": ["stress"], "tags": ["lay"]}
+{"id": "h008", "text": "ive had a temp of 101 for three days and my whole body hurts", "expected": ["fever", "muscle_pain"], "negated": [], "out_of_lexicon": [], "tags": ["lay", "informal", "hard"]}
+{"id": "h009", "text": "Should I get the shingles vaccine if I already had chickenpox?", "expected": ["shingles", "vaccine"], "negated": [], "out_of_lexicon": ["chickenpox"], "tags": ["condition"]}
+{"id": "h010", "text": "What is a hemoglobin A1C test used for?", "expected": ["a1c"], "negated": [], "out_of_lexicon": [], "tags": ["lab"]}
+{"id": "h011", "text": "My left arm feels weak and my speech was slurred for a few minutes this morning, now it's fine.", "expected": ["weakness", "confusion"], "negated": [], "out_of_lexicon": ["transient neurological symptoms"], "tags": ["lay", "hard"]}
+{"id": "h012", "text": "Is it bad to take Aleve every day for arthritis?", "expected": ["naproxen", "arthritis"], "negated": [], "out_of_lexicon": [], "tags": ["brand"]}
+{"id": "h013", "text": "no vomiting, no diarrhea, just nausea after taking my antibiotics", "expected": ["vomiting", "diarrhea", "nausea", "antibiotic"], "negated": ["vomiting", "diarrhea"], "out_of_lexicon": [], "tags": ["negation"]}
+{"id": "h014", "text": "how do i lower my triglycerides naturally", "expected": ["cholesterol_test"], "negated": [], "out_of_lexicon": [], "tags": ["lab"]}
+{"id": "h015", "text": "Recovering from hip replacement - when can I drive again?", "expected": ["hip_replacement"], "negated": [], "out_of_lexicon": [], "tags": ["procedure"]}
+{"id": "h016", "text": "What do elevated liver enzymes on my bloodwork mean?", "expected": ["metabolic_panel", "liver"], "negated": [], "out_of_lexicon": ["bloodwork"], "tags": ["lab"]}
+{"id": "h017", "text": "My doctor wants to start me on Ozempic. What should I know?", "expected": ["glp1_agonist"], "negated": [], "out_of_lexicon": [], "tags": ["brand"]}
+{"id": "h018", "text": "I have tendonitis in my shoulder from lifting. Ice or heat?", "expected": ["tendinitis"], "negated": [], "out_of_lexicon": ["shoulder"], "tags": ["spelling_variant"]}
+{"id": "h019", "text": "Neurologist ordered an MRI of my brain for my seizures", "expected": ["mri", "epilepsy"], "negated": [], "out_of_lexicon": ["brain", "neurologist"], "tags": ["test", "hard"]}
+{"id": "h020", "text": "can you get pneumonia from covid even after being vaccinated", "expected": ["pneumonia", "covid_19", "vaccine"], "negated": [], "out_of_lexicon": [], "tags": ["informal"]}
+{"id": "h021", "text": "What's the difference between hyperthyroidism and hypothyroidism?", "expected": ["hyperthyroidism", "hypothyroidism"], "negated": [], "out_of_lexicon": [], "tags": ["condition"]}
+{"id": "h022", "text": "Woke up with my eye all crusty and red, is it pinkeye?", "expected": ["conjunctivitis"], "negated": [], "out_of_lexicon": ["eye discharge"], "tags": ["lay"]}
+{"id": "h023", "text": "I'm on dialysis three times a week. Can I still travel?", "expected": ["dialysis"], "negated": [], "out_of_lexicon": [], "tags": ["procedure"]}
+{"id": "h024", "text": "How much water should I drink a day?", "expected": [], "negated": [], "out_of_lexicon": [], "tags": ["no_terms"]}
+{"id": "h025", "text": "What's a good stretching routine for desk workers?", "expected": [], "negated": [], "out_of_lexicon": [], "tags": ["no_terms"]}
+{"id": "h026", "text": "Pt denies fevers, chills, or night sweats. +cough x2wk.", "expected": ["fever", "chills", "night_sweats", "cough"], "negated": ["fever", "chills", "night_sweats"], "out_of_lexicon": [], "tags": ["clinical", "negation"]}
+{"id": "h027", "text": "Feeling exhausted all the time even though I sleep 9 hours. Could it be my thyroid?", "expected": ["fatigue", "thyroid"], "negated": [], "out_of_lexicon": [], "tags": ["lay"]}
+{"id": "h028", "text": "What are the risks of a colonoscopy?", "expected": ["colonoscopy"], "negated": [], "out_of_lexicon": [], "tags": ["test"]}
+{"id": "h029", "text": "Got diagnosed with a stomach ulcer, can I still drink coffee?", "expected": ["peptic_ulcer"], "negated": [], "out_of_lexicon": [], "tags": ["lay"]}
+{"id": "h030", "text": "Is hydrocodone stronger than codeine?", "expected": ["opioid"], "negated": [], "out_of_lexicon": [], "tags": ["medication"]}
+{"id": "h031", "text": "my ear hurts and there's fluid coming out, does my kid need amoxicillin", "expected": ["antibiotic"], "negated": [], "out_of_lexicon": ["ear pain", "ear drainage"], "tags": ["lay", "hard"]}
+{"id": "h032", "text": "What is the survival rate for pancreatic cancer?", "expected": ["pancreas", "cancer"], "negated": [], "out_of_lexicon": [], "tags": ["condition"]}
+{"id": "h033", "text": "I have type 1 diabetes, should I use a pump or keep doing injections of insulin?", "expected": ["type_1_diabetes", "insulin"], "negated": [], "out_of_lexicon": ["insulin pump"], "tags": ["condition"]}
+{"id": "h034", "text": "Blood work shows my white blood cell count is high. What causes that?", "expected": ["cbc"], "negated": [], "out_of_lexicon": ["leukocytosis"], "tags": ["lab"]}
+{"id": "h035", "text": "Do I need a CT if I hit my head and have a headache but didnt pass out?", "expected": ["ct_scan", "headache", "syncope"], "negated": ["syncope"], "out_of_lexicon": ["head injury"], "tags": ["negation", "hard"]}
+{"id": "h036", "text": "Can I do pilates with a bulging disc in my lower back?", "expected": ["herniated_disc"], "negated": [], "out_of_lexicon": [], "tags": ["lay"]}
+{"id": "h037", "text": "Is benadryl safe for kids with hives?", "expected": ["antihistamine", "rash"], "negated": [], "out_of_lexicon": [], "tags": ["brand"]}
+{"id": "h038", "text": "my legs cramp at night. potassium deficiency?", "expected": [], "negated": [], "out_of_lexicon": ["muscle cramps", "hypokalemia"], "tags": ["oov", "hard"]}
+{"id": "h039", "text": "What does a positive strep test mean?", "expected": ["strep_throat"], "negated": [], "out_of_lexicon": ["rapid strep test"], "tags": ["test"]}
+{"id": "h040", "text": "Had a mini-stroke last month; what meds help prevent another one?", "expected": ["tia", "stroke"], "negated": [], "out_of_lexicon": [], "tags": ["lay"]}

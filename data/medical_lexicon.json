@@ -1,0 +1,2405 @@
+{
+  "version": "1.0.0",
+  "description": "Curated lay + clinical medical vocabulary used by MedChat AI's terminology recognizer. Each concept has a canonical id, a category, surface forms (synonyms and lay phrasings), abbreviations, and a plain-language definition shown in the UI.",
+  "case_sensitive_abbreviations": [
+    "MI",
+    "MS",
+    "RA",
+    "PE",
+    "ED",
+    "CHF",
+    "OA",
+    "TIA",
+    "AF",
+    "CA",
+    "DM",
+    "BMI",
+    "MRI",
+    "ECG",
+    "EKG",
+    "CT",
+    "PT",
+    "OT",
+    "GI",
+    "BP",
+    "HR",
+    "IV",
+    "SOB",
+    "UC",
+    "URI",
+    "ASA",
+    "APAP",
+    "CAD",
+    "PCI",
+    "GAD",
+    "TBI",
+    "WBC"
+  ],
+  "concepts": [
+    {
+      "id": "hypertension",
+      "term": "Hypertension",
+      "category": "condition",
+      "synonyms": [
+        "high blood pressure",
+        "elevated blood pressure",
+        "hypertensive"
+      ],
+      "abbreviations": [
+        "HTN"
+      ],
+      "definition": "Blood pressure that stays higher than normal over time, which strains the heart and blood vessels."
+    },
+    {
+      "id": "hypotension",
+      "term": "Hypotension",
+      "category": "condition",
+      "synonyms": [
+        "low blood pressure"
+      ],
+      "abbreviations": [],
+      "definition": "Blood pressure lower than normal, which can cause dizziness or fainting."
+    },
+    {
+      "id": "type_2_diabetes",
+      "term": "Type 2 diabetes",
+      "category": "condition",
+      "synonyms": [
+        "type 2 diabetes mellitus",
+        "type ii diabetes",
+        "type two diabetes",
+        "t2 diabetes",
+        "adult onset diabetes"
+      ],
+      "abbreviations": [
+        "T2DM",
+        "T2D"
+      ],
+      "definition": "A long-term condition where the body does not use insulin well, so blood sugar runs high."
+    },
+    {
+      "id": "type_1_diabetes",
+      "term": "Type 1 diabetes",
+      "category": "condition",
+      "synonyms": [
+        "type 1 diabetes mellitus",
+        "type i diabetes",
+        "type one diabetes",
+        "juvenile diabetes"
+      ],
+      "abbreviations": [
+        "T1DM",
+        "T1D"
+      ],
+      "definition": "An autoimmune condition where the pancreas makes little or no insulin."
+    },
+    {
+      "id": "diabetes",
+      "term": "Diabetes mellitus",
+      "category": "condition",
+      "synonyms": [
+        "diabetes",
+        "diabetes mellitus",
+        "diabetic",
+        "high blood sugar",
+        "sugar diabetes"
+      ],
+      "abbreviations": [
+        "DM"
+      ],
+      "definition": "A group of conditions in which blood sugar (glucose) levels are too high."
+    },
+    {
+      "id": "prediabetes",
+      "term": "Prediabetes",
+      "category": "condition",
+      "synonyms": [
+        "pre diabetes",
+        "borderline diabetes",
+        "impaired glucose tolerance"
+      ],
+      "abbreviations": [],
+      "definition": "Blood sugar higher than normal but not yet in the diabetes range."
+    },
+    {
+      "id": "hypoglycemia",
+      "term": "Hypoglycemia",
+      "category": "condition",
+      "synonyms": [
+        "low blood sugar",
+        "hypoglycaemia"
+      ],
+      "abbreviations": [],
+      "definition": "Blood sugar that drops below normal, causing shakiness, sweating, or confusion."
+    },
+    {
+      "id": "asthma",
+      "term": "Asthma",
+      "category": "condition",
+      "synonyms": [
+        "asthmatic",
+        "bronchial asthma"
+      ],
+      "abbreviations": [],
+      "definition": "A chronic condition where the airways narrow and swell, making breathing difficult."
+    },
+    {
+      "id": "copd",
+      "term": "Chronic obstructive pulmonary disease",
+      "category": "condition",
+      "synonyms": [
+        "chronic obstructive pulmonary disease",
+        "emphysema",
+        "chronic bronchitis"
+      ],
+      "abbreviations": [
+        "COPD"
+      ],
+      "definition": "A long-term lung disease that blocks airflow and makes breathing harder."
+    },
+    {
+      "id": "pneumonia",
+      "term": "Pneumonia",
+      "category": "condition",
+      "synonyms": [
+        "lung infection",
+        "chest infection"
+      ],
+      "abbreviations": [],
+      "definition": "An infection that inflames the air sacs in one or both lungs."
+    },
+    {
+      "id": "bronchitis",
+      "term": "Bronchitis",
+      "category": "condition",
+      "synonyms": [
+        "acute bronchitis"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation of the airways that carry air to the lungs, often with a cough."
+    },
+    {
+      "id": "influenza",
+      "term": "Influenza",
+      "category": "condition",
+      "synonyms": [
+        "flu",
+        "the flu"
+      ],
+      "abbreviations": [],
+      "definition": "A contagious viral infection of the nose, throat, and lungs."
+    },
+    {
+      "id": "covid_19",
+      "term": "COVID-19",
+      "category": "condition",
+      "synonyms": [
+        "covid",
+        "covid 19",
+        "coronavirus",
+        "sars cov 2"
+      ],
+      "abbreviations": [],
+      "definition": "A respiratory illness caused by the SARS-CoV-2 virus."
+    },
+    {
+      "id": "common_cold",
+      "term": "Common cold",
+      "category": "condition",
+      "synonyms": [
+        "a cold",
+        "head cold",
+        "chest cold",
+        "upper respiratory infection"
+      ],
+      "abbreviations": [
+        "URI"
+      ],
+      "definition": "A mild viral infection of the nose and throat."
+    },
+    {
+      "id": "sinusitis",
+      "term": "Sinusitis",
+      "category": "condition",
+      "synonyms": [
+        "sinus infection"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation or infection of the sinuses."
+    },
+    {
+      "id": "strep_throat",
+      "term": "Strep throat",
+      "category": "condition",
+      "synonyms": [
+        "streptococcal pharyngitis",
+        "strep"
+      ],
+      "abbreviations": [],
+      "definition": "A bacterial throat infection that causes a sore, scratchy throat."
+    },
+    {
+      "id": "myocardial_infarction",
+      "term": "Myocardial infarction",
+      "category": "condition",
+      "synonyms": [
+        "heart attack",
+        "myocardial infarction",
+        "cardiac infarction"
+      ],
+      "abbreviations": [
+        "MI",
+        "STEMI",
+        "NSTEMI"
+      ],
+      "definition": "Damage to heart muscle when its blood supply is blocked."
+    },
+    {
+      "id": "coronary_artery_disease",
+      "term": "Coronary artery disease",
+      "category": "condition",
+      "synonyms": [
+        "coronary artery disease",
+        "coronary heart disease",
+        "blocked arteries"
+      ],
+      "abbreviations": [
+        "CAD",
+        "CHD"
+      ],
+      "definition": "Narrowing of the arteries that supply the heart with blood."
+    },
+    {
+      "id": "heart_failure",
+      "term": "Heart failure",
+      "category": "condition",
+      "synonyms": [
+        "congestive heart failure",
+        "heart failure",
+        "cardiac failure"
+      ],
+      "abbreviations": [
+        "CHF"
+      ],
+      "definition": "A condition where the heart cannot pump blood as well as the body needs."
+    },
+    {
+      "id": "atrial_fibrillation",
+      "term": "Atrial fibrillation",
+      "category": "condition",
+      "synonyms": [
+        "atrial fibrillation",
+        "a fib",
+        "afib"
+      ],
+      "abbreviations": [
+        "AF"
+      ],
+      "definition": "An irregular, often rapid heart rhythm that can raise stroke risk."
+    },
+    {
+      "id": "arrhythmia",
+      "term": "Arrhythmia",
+      "category": "condition",
+      "synonyms": [
+        "irregular heartbeat",
+        "irregular heart rhythm",
+        "dysrhythmia"
+      ],
+      "abbreviations": [],
+      "definition": "A heartbeat that is too fast, too slow, or irregular."
+    },
+    {
+      "id": "stroke",
+      "term": "Stroke",
+      "category": "condition",
+      "synonyms": [
+        "cerebrovascular accident",
+        "brain attack"
+      ],
+      "abbreviations": [
+        "CVA"
+      ],
+      "definition": "Damage to the brain from interrupted blood flow or bleeding."
+    },
+    {
+      "id": "tia",
+      "term": "Transient ischemic attack",
+      "category": "condition",
+      "synonyms": [
+        "transient ischemic attack",
+        "mini stroke",
+        "ministroke"
+      ],
+      "abbreviations": [
+        "TIA"
+      ],
+      "definition": "A brief stroke-like episode that resolves but signals higher stroke risk."
+    },
+    {
+      "id": "high_cholesterol",
+      "term": "Hyperlipidemia",
+      "category": "condition",
+      "synonyms": [
+        "high cholesterol",
+        "hyperlipidemia",
+        "hypercholesterolemia",
+        "dyslipidemia"
+      ],
+      "abbreviations": [],
+      "definition": "Higher than healthy levels of fats such as cholesterol in the blood."
+    },
+    {
+      "id": "anemia",
+      "term": "Anemia",
+      "category": "condition",
+      "synonyms": [
+        "anaemia",
+        "low iron",
+        "iron deficiency anemia",
+        "low hemoglobin"
+      ],
+      "abbreviations": [],
+      "definition": "Not enough healthy red blood cells to carry adequate oxygen."
+    },
+    {
+      "id": "dvt",
+      "term": "Deep vein thrombosis",
+      "category": "condition",
+      "synonyms": [
+        "deep vein thrombosis",
+        "blood clot in the leg",
+        "blood clot in my leg"
+      ],
+      "abbreviations": [
+        "DVT"
+      ],
+      "definition": "A blood clot in a deep vein, usually in the leg."
+    },
+    {
+      "id": "pulmonary_embolism",
+      "term": "Pulmonary embolism",
+      "category": "condition",
+      "synonyms": [
+        "pulmonary embolism",
+        "blood clot in the lung",
+        "blood clot in my lung"
+      ],
+      "abbreviations": [
+        "PE"
+      ],
+      "definition": "A blood clot that travels to and blocks an artery in the lungs."
+    },
+    {
+      "id": "gerd",
+      "term": "Gastroesophageal reflux disease",
+      "category": "condition",
+      "synonyms": [
+        "gastroesophageal reflux disease",
+        "acid reflux",
+        "reflux",
+        "gastroesophageal reflux"
+      ],
+      "abbreviations": [
+        "GERD",
+        "GORD"
+      ],
+      "definition": "Stomach acid flowing back into the esophagus, often causing heartburn."
+    },
+    {
+      "id": "ibs",
+      "term": "Irritable bowel syndrome",
+      "category": "condition",
+      "synonyms": [
+        "irritable bowel syndrome",
+        "spastic colon"
+      ],
+      "abbreviations": [
+        "IBS"
+      ],
+      "definition": "A common gut disorder causing cramping, bloating, and changes in bowel habits."
+    },
+    {
+      "id": "ibd",
+      "term": "Inflammatory bowel disease",
+      "category": "condition",
+      "synonyms": [
+        "inflammatory bowel disease",
+        "crohn's disease",
+        "crohns disease",
+        "crohn disease",
+        "ulcerative colitis",
+        "crohn's",
+        "crohns",
+        "colitis"
+      ],
+      "abbreviations": [
+        "IBD",
+        "UC"
+      ],
+      "definition": "Chronic inflammation of the digestive tract, including Crohn's disease and ulcerative colitis."
+    },
+    {
+      "id": "appendicitis",
+      "term": "Appendicitis",
+      "category": "condition",
+      "synonyms": [
+        "inflamed appendix"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation of the appendix, usually needing urgent treatment."
+    },
+    {
+      "id": "gastroenteritis",
+      "term": "Gastroenteritis",
+      "category": "condition",
+      "synonyms": [
+        "stomach flu",
+        "stomach bug",
+        "food poisoning"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation of the stomach and intestines, causing vomiting and diarrhea."
+    },
+    {
+      "id": "peptic_ulcer",
+      "term": "Peptic ulcer",
+      "category": "condition",
+      "synonyms": [
+        "stomach ulcer",
+        "peptic ulcer",
+        "gastric ulcer",
+        "duodenal ulcer",
+        "ulcer"
+      ],
+      "abbreviations": [],
+      "definition": "A sore in the lining of the stomach or upper small intestine."
+    },
+    {
+      "id": "gallstones",
+      "term": "Gallstones",
+      "category": "condition",
+      "synonyms": [
+        "gallstone",
+        "cholelithiasis",
+        "gallbladder stones"
+      ],
+      "abbreviations": [],
+      "definition": "Hardened deposits that form in the gallbladder."
+    },
+    {
+      "id": "kidney_stones",
+      "term": "Kidney stones",
+      "category": "condition",
+      "synonyms": [
+        "kidney stone",
+        "renal calculi",
+        "nephrolithiasis"
+      ],
+      "abbreviations": [],
+      "definition": "Hard mineral deposits that form in the kidneys."
+    },
+    {
+      "id": "ckd",
+      "term": "Chronic kidney disease",
+      "category": "condition",
+      "synonyms": [
+        "chronic kidney disease",
+        "kidney disease",
+        "renal failure",
+        "kidney failure"
+      ],
+      "abbreviations": [
+        "CKD"
+      ],
+      "definition": "Gradual loss of kidney function over time."
+    },
+    {
+      "id": "uti",
+      "term": "Urinary tract infection",
+      "category": "condition",
+      "synonyms": [
+        "urinary tract infection",
+        "bladder infection",
+        "cystitis"
+      ],
+      "abbreviations": [
+        "UTI"
+      ],
+      "definition": "An infection in any part of the urinary system, most often the bladder."
+    },
+    {
+      "id": "hypothyroidism",
+      "term": "Hypothyroidism",
+      "category": "condition",
+      "synonyms": [
+        "underactive thyroid",
+        "low thyroid",
+        "hashimoto's",
+        "hashimotos"
+      ],
+      "abbreviations": [],
+      "definition": "The thyroid gland does not make enough thyroid hormone."
+    },
+    {
+      "id": "hyperthyroidism",
+      "term": "Hyperthyroidism",
+      "category": "condition",
+      "synonyms": [
+        "overactive thyroid",
+        "graves disease",
+        "graves' disease"
+      ],
+      "abbreviations": [],
+      "definition": "The thyroid gland makes too much thyroid hormone."
+    },
+    {
+      "id": "osteoarthritis",
+      "term": "Osteoarthritis",
+      "category": "condition",
+      "synonyms": [
+        "degenerative joint disease",
+        "wear and tear arthritis"
+      ],
+      "abbreviations": [
+        "OA"
+      ],
+      "definition": "Breakdown of joint cartilage causing pain and stiffness."
+    },
+    {
+      "id": "rheumatoid_arthritis",
+      "term": "Rheumatoid arthritis",
+      "category": "condition",
+      "synonyms": [
+        "rheumatoid arthritis"
+      ],
+      "abbreviations": [
+        "RA"
+      ],
+      "definition": "An autoimmune disease that inflames the joints."
+    },
+    {
+      "id": "arthritis",
+      "term": "Arthritis",
+      "category": "condition",
+      "synonyms": [
+        "arthritic"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation of one or more joints, causing pain and stiffness."
+    },
+    {
+      "id": "osteoporosis",
+      "term": "Osteoporosis",
+      "category": "condition",
+      "synonyms": [
+        "brittle bones",
+        "bone loss"
+      ],
+      "abbreviations": [],
+      "definition": "Bones become weak and brittle, raising fracture risk."
+    },
+    {
+      "id": "gout",
+      "term": "Gout",
+      "category": "condition",
+      "synonyms": [
+        "gouty arthritis"
+      ],
+      "abbreviations": [],
+      "definition": "A form of arthritis caused by uric acid crystals in a joint."
+    },
+    {
+      "id": "fracture",
+      "term": "Fracture",
+      "category": "condition",
+      "synonyms": [
+        "broken bone",
+        "fractured"
+      ],
+      "abbreviations": [],
+      "definition": "A break in a bone."
+    },
+    {
+      "id": "sprain",
+      "term": "Sprain",
+      "category": "condition",
+      "synonyms": [
+        "sprained",
+        "twisted ankle",
+        "rolled my ankle"
+      ],
+      "abbreviations": [],
+      "definition": "A stretched or torn ligament."
+    },
+    {
+      "id": "tendinitis",
+      "term": "Tendinitis",
+      "category": "condition",
+      "synonyms": [
+        "tendonitis",
+        "tendinopathy"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation or irritation of a tendon."
+    },
+    {
+      "id": "herniated_disc",
+      "term": "Herniated disc",
+      "category": "condition",
+      "synonyms": [
+        "slipped disc",
+        "bulging disc",
+        "herniated disk",
+        "slipped disk",
+        "disc herniation"
+      ],
+      "abbreviations": [],
+      "definition": "A spinal disc whose soft center pushes out and can press on nerves."
+    },
+    {
+      "id": "sciatica",
+      "term": "Sciatica",
+      "category": "condition",
+      "synonyms": [
+        "sciatic nerve pain"
+      ],
+      "abbreviations": [],
+      "definition": "Pain along the sciatic nerve, from the lower back down the leg."
+    },
+    {
+      "id": "migraine",
+      "term": "Migraine",
+      "category": "condition",
+      "synonyms": [
+        "migraine headache",
+        "migraines"
+      ],
+      "abbreviations": [],
+      "definition": "Recurring, often severe headaches, sometimes with nausea or light sensitivity."
+    },
+    {
+      "id": "epilepsy",
+      "term": "Epilepsy",
+      "category": "condition",
+      "synonyms": [
+        "seizure disorder"
+      ],
+      "abbreviations": [],
+      "definition": "A brain condition that causes recurring seizures."
+    },
+    {
+      "id": "concussion",
+      "term": "Concussion",
+      "category": "condition",
+      "synonyms": [
+        "mild traumatic brain injury",
+        "head injury"
+      ],
+      "abbreviations": [
+        "TBI"
+      ],
+      "definition": "A mild brain injury caused by a blow or jolt to the head."
+    },
+    {
+      "id": "dementia",
+      "term": "Dementia",
+      "category": "condition",
+      "synonyms": [
+        "alzheimer's",
+        "alzheimers",
+        "alzheimer's disease",
+        "alzheimer disease"
+      ],
+      "abbreviations": [],
+      "definition": "A decline in memory and thinking severe enough to affect daily life."
+    },
+    {
+      "id": "parkinsons",
+      "term": "Parkinson's disease",
+      "category": "condition",
+      "synonyms": [
+        "parkinson's",
+        "parkinsons",
+        "parkinson's disease",
+        "parkinson disease"
+      ],
+      "abbreviations": [],
+      "definition": "A progressive nervous system disorder that affects movement."
+    },
+    {
+      "id": "multiple_sclerosis",
+      "term": "Multiple sclerosis",
+      "category": "condition",
+      "synonyms": [
+        "multiple sclerosis"
+      ],
+      "abbreviations": [
+        "MS"
+      ],
+      "definition": "A disease in which the immune system attacks the protective covering of nerves."
+    },
+    {
+      "id": "depression",
+      "term": "Depression",
+      "category": "condition",
+      "synonyms": [
+        "major depressive disorder",
+        "clinical depression",
+        "depressed"
+      ],
+      "abbreviations": [
+        "MDD"
+      ],
+      "definition": "A mood disorder causing persistent sadness and loss of interest."
+    },
+    {
+      "id": "anxiety",
+      "term": "Anxiety disorder",
+      "category": "condition",
+      "synonyms": [
+        "anxiety",
+        "generalized anxiety disorder",
+        "panic attack",
+        "panic attacks",
+        "panic disorder"
+      ],
+      "abbreviations": [
+        "GAD"
+      ],
+      "definition": "Ongoing worry or fear that interferes with daily activities."
+    },
+    {
+      "id": "insomnia",
+      "term": "Insomnia",
+      "category": "condition",
+      "synonyms": [
+        "can't sleep",
+        "cannot sleep",
+        "trouble sleeping",
+        "difficulty sleeping"
+      ],
+      "abbreviations": [],
+      "definition": "Persistent trouble falling or staying asleep."
+    },
+    {
+      "id": "sleep_apnea",
+      "term": "Sleep apnea",
+      "category": "condition",
+      "synonyms": [
+        "obstructive sleep apnea",
+        "sleep apnoea"
+      ],
+      "abbreviations": [
+        "OSA"
+      ],
+      "definition": "Breathing repeatedly stops and starts during sleep."
+    },
+    {
+      "id": "obesity",
+      "term": "Obesity",
+      "category": "condition",
+      "synonyms": [
+        "obese",
+        "morbid obesity"
+      ],
+      "abbreviations": [],
+      "definition": "Excess body fat that increases the risk of other health problems."
+    },
+    {
+      "id": "eczema",
+      "term": "Eczema",
+      "category": "condition",
+      "synonyms": [
+        "atopic dermatitis",
+        "dermatitis"
+      ],
+      "abbreviations": [],
+      "definition": "A condition that makes skin red, dry, and itchy."
+    },
+    {
+      "id": "psoriasis",
+      "term": "Psoriasis",
+      "category": "condition",
+      "synonyms": [],
+      "abbreviations": [],
+      "definition": "An immune condition causing scaly, inflamed patches of skin."
+    },
+    {
+      "id": "shingles",
+      "term": "Shingles",
+      "category": "condition",
+      "synonyms": [
+        "herpes zoster",
+        "zoster"
+      ],
+      "abbreviations": [],
+      "definition": "A painful rash caused by reactivation of the chickenpox virus."
+    },
+    {
+      "id": "cellulitis",
+      "term": "Cellulitis",
+      "category": "condition",
+      "synonyms": [
+        "skin infection"
+      ],
+      "abbreviations": [],
+      "definition": "A bacterial infection of the deeper layers of skin."
+    },
+    {
+      "id": "allergy",
+      "term": "Allergy",
+      "category": "condition",
+      "synonyms": [
+        "allergies",
+        "allergic reaction",
+        "allergic",
+        "hay fever",
+        "allergic rhinitis"
+      ],
+      "abbreviations": [],
+      "definition": "An immune reaction to a substance that is usually harmless."
+    },
+    {
+      "id": "anaphylaxis",
+      "term": "Anaphylaxis",
+      "category": "condition",
+      "synonyms": [
+        "anaphylactic shock",
+        "anaphylactic reaction"
+      ],
+      "abbreviations": [],
+      "definition": "A severe, potentially life-threatening allergic reaction."
+    },
+    {
+      "id": "cancer",
+      "term": "Cancer",
+      "category": "condition",
+      "synonyms": [
+        "malignancy",
+        "tumor",
+        "tumour",
+        "carcinoma"
+      ],
+      "abbreviations": [],
+      "definition": "Disease in which abnormal cells grow uncontrollably and can spread."
+    },
+    {
+      "id": "conjunctivitis",
+      "term": "Conjunctivitis",
+      "category": "condition",
+      "synonyms": [
+        "pink eye",
+        "pinkeye"
+      ],
+      "abbreviations": [],
+      "definition": "Inflammation of the clear membrane covering the white of the eye."
+    },
+    {
+      "id": "ear_infection",
+      "term": "Otitis media",
+      "category": "condition",
+      "synonyms": [
+        "ear infection",
+        "otitis media",
+        "middle ear infection"
+      ],
+      "abbreviations": [],
+      "definition": "An infection of the middle ear."
+    },
+    {
+      "id": "dehydration",
+      "term": "Dehydration",
+      "category": "condition",
+      "synonyms": [
+        "dehydrated"
+      ],
+      "abbreviations": [],
+      "definition": "The body loses more fluid than it takes in."
+    },
+    {
+      "id": "chest_pain",
+      "term": "Chest pain",
+      "category": "symptom",
+      "synonyms": [
+        "chest pain",
+        "chest pains",
+        "chest tightness",
+        "chest pressure",
+        "angina",
+        "pain in my chest"
+      ],
+      "abbreviations": [],
+      "definition": "Discomfort in the chest; can be serious and may need urgent evaluation."
+    },
+    {
+      "id": "shortness_of_breath",
+      "term": "Shortness of breath",
+      "category": "symptom",
+      "synonyms": [
+        "shortness of breath",
+        "short of breath",
+        "difficulty breathing",
+        "trouble breathing",
+        "breathlessness",
+        "dyspnea",
+        "can't breathe",
+        "cannot breathe"
+      ],
+      "abbreviations": [
+        "SOB"
+      ],
+      "definition": "Feeling that you cannot get enough air."
+    },
+    {
+      "id": "headache",
+      "term": "Headache",
+      "category": "symptom",
+      "synonyms": [
+        "headaches",
+        "head ache",
+        "head pain",
+        "cephalalgia"
+      ],
+      "abbreviations": [],
+      "definition": "Pain in any region of the head."
+    },
+    {
+      "id": "fever",
+      "term": "Fever",
+      "category": "symptom",
+      "synonyms": [
+        "fevers",
+        "febrile",
+        "high temperature",
+        "pyrexia",
+        "running a temperature"
+      ],
+      "abbreviations": [],
+      "definition": "A body temperature higher than normal, often a sign of infection."
+    },
+    {
+      "id": "chills",
+      "term": "Chills",
+      "category": "symptom",
+      "synonyms": [
+        "shivering",
+        "rigors"
+      ],
+      "abbreviations": [],
+      "definition": "Feeling cold with shivering, often alongside fever."
+    },
+    {
+      "id": "cough",
+      "term": "Cough",
+      "category": "symptom",
+      "synonyms": [
+        "coughing",
+        "dry cough",
+        "wet cough",
+        "productive cough"
+      ],
+      "abbreviations": [],
+      "definition": "A reflex that clears the airways of mucus or irritants."
+    },
+    {
+      "id": "sore_throat",
+      "term": "Sore throat",
+      "category": "symptom",
+      "synonyms": [
+        "sore throat",
+        "throat pain",
+        "pharyngitis",
+        "scratchy throat"
+      ],
+      "abbreviations": [],
+      "definition": "Pain or irritation in the throat."
+    },
+    {
+      "id": "nasal_congestion",
+      "term": "Nasal congestion",
+      "category": "symptom",
+      "synonyms": [
+        "stuffy nose",
+        "blocked nose",
+        "runny nose",
+        "congestion",
+        "nasal congestion"
+      ],
+      "abbreviations": [],
+      "definition": "A blocked or runny nose."
+    },
+    {
+      "id": "wheezing",
+      "term": "Wheezing",
+      "category": "symptom",
+      "synonyms": [
+        "wheeze",
+        "wheezy"
+      ],
+      "abbreviations": [],
+      "definition": "A whistling sound when breathing, from narrowed airways."
+    },
+    {
+      "id": "nausea",
+      "term": "Nausea",
+      "category": "symptom",
+      "synonyms": [
+        "nauseous",
+        "nauseated",
+        "queasy",
+        "feel sick to my stomach"
+      ],
+      "abbreviations": [],
+      "definition": "An uneasy feeling in the stomach with an urge to vomit."
+    },
+    {
+      "id": "vomiting",
+      "term": "Vomiting",
+      "category": "symptom",
+      "synonyms": [
+        "vomit",
+        "throwing up",
+        "threw up",
+        "throw up",
+        "emesis"
+      ],
+      "abbreviations": [],
+      "definition": "Forcefully bringing up stomach contents through the mouth."
+    },
+    {
+      "id": "diarrhea",
+      "term": "Diarrhea",
+      "category": "symptom",
+      "synonyms": [
+        "diarrhoea",
+        "loose stools",
+        "watery stool",
+        "the runs"
+      ],
+      "abbreviations": [],
+      "definition": "Loose, watery bowel movements."
+    },
+    {
+      "id": "constipation",
+      "term": "Constipation",
+      "category": "symptom",
+      "synonyms": [
+        "constipated",
+        "hard stools"
+      ],
+      "abbreviations": [],
+      "definition": "Infrequent or difficult bowel movements."
+    },
+    {
+      "id": "abdominal_pain",
+      "term": "Abdominal pain",
+      "category": "symptom",
+      "synonyms": [
+        "abdominal pain",
+        "stomach pain",
+        "stomach ache",
+        "stomachache",
+        "belly pain",
+        "tummy ache",
+        "stomach cramps",
+        "abdominal cramps"
+      ],
+      "abbreviations": [],
+      "definition": "Pain felt anywhere between the chest and the groin."
+    },
+    {
+      "id": "heartburn",
+      "term": "Heartburn",
+      "category": "symptom",
+      "synonyms": [
+        "indigestion",
+        "dyspepsia"
+      ],
+      "abbreviations": [],
+      "definition": "A burning feeling in the chest, often from stomach acid."
+    },
+    {
+      "id": "bloating",
+      "term": "Bloating",
+      "category": "symptom",
+      "synonyms": [
+        "bloated",
+        "abdominal distension"
+      ],
+      "abbreviations": [],
+      "definition": "A feeling of fullness or swelling in the belly."
+    },
+    {
+      "id": "blood_in_stool",
+      "term": "Blood in stool",
+      "category": "symptom",
+      "synonyms": [
+        "blood in stool",
+        "blood in my stool",
+        "bloody stool",
+        "rectal bleeding",
+        "black stool",
+        "melena"
+      ],
+      "abbreviations": [],
+      "definition": "Visible or dark blood in bowel movements; should be evaluated by a clinician."
+    },
+    {
+      "id": "dizziness",
+      "term": "Dizziness",
+      "category": "symptom",
+      "synonyms": [
+        "dizzy",
+        "lightheaded",
+        "light headed",
+        "lightheadedness",
+        "vertigo"
+      ],
+      "abbreviations": [],
+      "definition": "Feeling faint, unsteady, or as if the room is spinning."
+    },
+    {
+      "id": "syncope",
+      "term": "Syncope",
+      "category": "symptom",
+      "synonyms": [
+        "fainting",
+        "fainted",
+        "passed out",
+        "passing out",
+        "blacked out"
+      ],
+      "abbreviations": [],
+      "definition": "A brief loss of consciousness from reduced blood flow to the brain."
+    },
+    {
+      "id": "fatigue",
+      "term": "Fatigue",
+      "category": "symptom",
+      "synonyms": [
+        "tired",
+        "tiredness",
+        "exhausted",
+        "exhaustion",
+        "lethargy",
+        "lethargic",
+        "low energy"
+      ],
+      "abbreviations": [],
+      "definition": "Persistent tiredness or lack of energy."
+    },
+    {
+      "id": "palpitations",
+      "term": "Palpitations",
+      "category": "symptom",
+      "synonyms": [
+        "heart palpitations",
+        "racing heart",
+        "heart racing",
+        "pounding heart",
+        "fluttering in my chest"
+      ],
+      "abbreviations": [],
+      "definition": "Feeling that the heart is racing, pounding, or skipping beats."
+    },
+    {
+      "id": "edema",
+      "term": "Edema",
+      "category": "symptom",
+      "synonyms": [
+        "oedema",
+        "swelling",
+        "swollen ankles",
+        "swollen legs",
+        "swollen feet",
+        "fluid retention"
+      ],
+      "abbreviations": [],
+      "definition": "Swelling caused by fluid trapped in the body's tissues."
+    },
+    {
+      "id": "rash",
+      "term": "Rash",
+      "category": "symptom",
+      "synonyms": [
+        "skin rash",
+        "hives",
+        "urticaria"
+      ],
+      "abbreviations": [],
+      "definition": "An area of irritated or swollen skin, often red and itchy."
+    },
+    {
+      "id": "itching",
+      "term": "Itching",
+      "category": "symptom",
+      "synonyms": [
+        "itchy",
+        "pruritus",
+        "itch"
+      ],
+      "abbreviations": [],
+      "definition": "An irritating sensation that makes you want to scratch."
+    },
+    {
+      "id": "back_pain",
+      "term": "Back pain",
+      "category": "symptom",
+      "synonyms": [
+        "back pain",
+        "lower back pain",
+        "low back pain",
+        "backache",
+        "lumbago"
+      ],
+      "abbreviations": [],
+      "definition": "Pain felt in the back, most often the lower back."
+    },
+    {
+      "id": "joint_pain",
+      "term": "Joint pain",
+      "category": "symptom",
+      "synonyms": [
+        "joint pain",
+        "joint pains",
+        "arthralgia",
+        "achy joints",
+        "joint stiffness"
+      ],
+      "abbreviations": [],
+      "definition": "Discomfort, aches, or soreness in a joint."
+    },
+    {
+      "id": "muscle_pain",
+      "term": "Muscle pain",
+      "category": "symptom",
+      "synonyms": [
+        "muscle pain",
+        "muscle aches",
+        "body aches",
+        "myalgia",
+        "sore muscles"
+      ],
+      "abbreviations": [],
+      "definition": "Aches or pain in the muscles."
+    },
+    {
+      "id": "numbness",
+      "term": "Numbness",
+      "category": "symptom",
+      "synonyms": [
+        "numb",
+        "tingling",
+        "pins and needles",
+        "paresthesia"
+      ],
+      "abbreviations": [],
+      "definition": "Reduced feeling or a tingling sensation, often in hands or feet."
+    },
+    {
+      "id": "weakness",
+      "term": "Weakness",
+      "category": "symptom",
+      "synonyms": [
+        "muscle weakness",
+        "weak on one side",
+        "facial droop",
+        "face drooping"
+      ],
+      "abbreviations": [],
+      "definition": "Reduced strength in one or more muscles."
+    },
+    {
+      "id": "confusion",
+      "term": "Confusion",
+      "category": "symptom",
+      "synonyms": [
+        "confused",
+        "disoriented",
+        "disorientation",
+        "slurred speech"
+      ],
+      "abbreviations": [],
+      "definition": "Difficulty thinking clearly or knowing where you are."
+    },
+    {
+      "id": "blurred_vision",
+      "term": "Blurred vision",
+      "category": "symptom",
+      "synonyms": [
+        "blurred vision",
+        "blurry vision",
+        "vision loss",
+        "double vision"
+      ],
+      "abbreviations": [],
+      "definition": "Lack of sharpness in eyesight."
+    },
+    {
+      "id": "frequent_urination",
+      "term": "Frequent urination",
+      "category": "symptom",
+      "synonyms": [
+        "frequent urination",
+        "peeing a lot",
+        "polyuria",
+        "urinating often"
+      ],
+      "abbreviations": [],
+      "definition": "Needing to urinate more often than usual."
+    },
+    {
+      "id": "painful_urination",
+      "term": "Painful urination",
+      "category": "symptom",
+      "synonyms": [
+        "painful urination",
+        "burning when i pee",
+        "burning when i urinate",
+        "burning urination",
+        "dysuria"
+      ],
+      "abbreviations": [],
+      "definition": "Pain or burning while urinating."
+    },
+    {
+      "id": "excessive_thirst",
+      "term": "Excessive thirst",
+      "category": "symptom",
+      "synonyms": [
+        "excessive thirst",
+        "always thirsty",
+        "very thirsty",
+        "polydipsia"
+      ],
+      "abbreviations": [],
+      "definition": "Feeling unusually thirsty."
+    },
+    {
+      "id": "weight_loss",
+      "term": "Unintentional weight loss",
+      "category": "symptom",
+      "synonyms": [
+        "weight loss",
+        "losing weight",
+        "lost weight"
+      ],
+      "abbreviations": [],
+      "definition": "A drop in body weight; unexplained loss should be checked by a clinician."
+    },
+    {
+      "id": "night_sweats",
+      "term": "Night sweats",
+      "category": "symptom",
+      "synonyms": [
+        "night sweats",
+        "sweating at night"
+      ],
+      "abbreviations": [],
+      "definition": "Heavy sweating during sleep."
+    },
+    {
+      "id": "loss_of_smell",
+      "term": "Loss of smell or taste",
+      "category": "symptom",
+      "synonyms": [
+        "loss of smell",
+        "loss of taste",
+        "can't smell",
+        "anosmia"
+      ],
+      "abbreviations": [],
+      "definition": "Reduced or absent ability to smell or taste."
+    },
+    {
+      "id": "acetaminophen",
+      "term": "Acetaminophen",
+      "category": "medication",
+      "synonyms": [
+        "tylenol",
+        "paracetamol",
+        "panadol"
+      ],
+      "abbreviations": [
+        "APAP"
+      ],
+      "definition": "A pain reliever and fever reducer; too much can damage the liver."
+    },
+    {
+      "id": "ibuprofen",
+      "term": "Ibuprofen",
+      "category": "medication",
+      "synonyms": [
+        "advil",
+        "motrin"
+      ],
+      "abbreviations": [],
+      "definition": "A nonsteroidal anti-inflammatory drug (NSAID) for pain, fever, and inflammation."
+    },
+    {
+      "id": "naproxen",
+      "term": "Naproxen",
+      "category": "medication",
+      "synonyms": [
+        "aleve"
+      ],
+      "abbreviations": [],
+      "definition": "A longer-acting NSAID used for pain and inflammation."
+    },
+    {
+      "id": "aspirin",
+      "term": "Aspirin",
+      "category": "medication",
+      "synonyms": [
+        "acetylsalicylic acid",
+        "baby aspirin"
+      ],
+      "abbreviations": [
+        "ASA"
+      ],
+      "definition": "An NSAID used for pain and, at low doses, to reduce clotting."
+    },
+    {
+      "id": "nsaid",
+      "term": "NSAID",
+      "category": "medication",
+      "synonyms": [
+        "nsaids",
+        "anti inflammatory",
+        "anti inflammatories",
+        "nonsteroidal anti inflammatory"
+      ],
+      "abbreviations": [
+        "NSAID"
+      ],
+      "definition": "A class of pain relievers that reduce inflammation, such as ibuprofen and naproxen."
+    },
+    {
+      "id": "metformin",
+      "term": "Metformin",
+      "category": "medication",
+      "synonyms": [
+        "glucophage"
+      ],
+      "abbreviations": [],
+      "definition": "A first-line medicine that lowers blood sugar in type 2 diabetes."
+    },
+    {
+      "id": "insulin",
+      "term": "Insulin",
+      "category": "medication",
+      "synonyms": [
+        "lantus",
+        "humalog",
+        "novolog",
+        "insulin glargine"
+      ],
+      "abbreviations": [],
+      "definition": "A hormone, given as medicine, that lowers blood sugar."
+    },
+    {
+      "id": "glp1_agonist",
+      "term": "GLP-1 receptor agonist",
+      "category": "medication",
+      "synonyms": [
+        "semaglutide",
+        "ozempic",
+        "wegovy",
+        "tirzepatide",
+        "mounjaro",
+        "zepbound",
+        "liraglutide",
+        "glp 1"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that lower blood sugar and appetite, used for diabetes and weight management."
+    },
+    {
+      "id": "lisinopril",
+      "term": "Lisinopril",
+      "category": "medication",
+      "synonyms": [
+        "zestril",
+        "prinivil",
+        "ace inhibitor"
+      ],
+      "abbreviations": [],
+      "definition": "An ACE inhibitor that lowers blood pressure."
+    },
+    {
+      "id": "amlodipine",
+      "term": "Amlodipine",
+      "category": "medication",
+      "synonyms": [
+        "norvasc"
+      ],
+      "abbreviations": [],
+      "definition": "A calcium channel blocker that lowers blood pressure."
+    },
+    {
+      "id": "losartan",
+      "term": "Losartan",
+      "category": "medication",
+      "synonyms": [
+        "cozaar"
+      ],
+      "abbreviations": [],
+      "definition": "An angiotensin receptor blocker (ARB) that lowers blood pressure."
+    },
+    {
+      "id": "metoprolol",
+      "term": "Metoprolol",
+      "category": "medication",
+      "synonyms": [
+        "lopressor",
+        "toprol",
+        "beta blocker",
+        "beta blockers"
+      ],
+      "abbreviations": [],
+      "definition": "A beta blocker that slows heart rate and lowers blood pressure."
+    },
+    {
+      "id": "hydrochlorothiazide",
+      "term": "Hydrochlorothiazide",
+      "category": "medication",
+      "synonyms": [
+        "water pill",
+        "diuretic"
+      ],
+      "abbreviations": [
+        "HCTZ"
+      ],
+      "definition": "A diuretic (water pill) used to lower blood pressure."
+    },
+    {
+      "id": "statin",
+      "term": "Statin",
+      "category": "medication",
+      "synonyms": [
+        "statins",
+        "atorvastatin",
+        "lipitor",
+        "rosuvastatin",
+        "crestor",
+        "simvastatin",
+        "zocor"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that lower LDL cholesterol."
+    },
+    {
+      "id": "warfarin",
+      "term": "Warfarin",
+      "category": "medication",
+      "synonyms": [
+        "coumadin"
+      ],
+      "abbreviations": [],
+      "definition": "A blood thinner that needs regular blood tests to monitor."
+    },
+    {
+      "id": "anticoagulant",
+      "term": "Anticoagulant",
+      "category": "medication",
+      "synonyms": [
+        "blood thinner",
+        "blood thinners",
+        "apixaban",
+        "eliquis",
+        "rivaroxaban",
+        "xarelto",
+        "clopidogrel",
+        "plavix"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that reduce blood clotting."
+    },
+    {
+      "id": "levothyroxine",
+      "term": "Levothyroxine",
+      "category": "medication",
+      "synonyms": [
+        "synthroid",
+        "thyroid hormone replacement"
+      ],
+      "abbreviations": [],
+      "definition": "Thyroid hormone replacement for an underactive thyroid."
+    },
+    {
+      "id": "omeprazole",
+      "term": "Proton pump inhibitor",
+      "category": "medication",
+      "synonyms": [
+        "omeprazole",
+        "prilosec",
+        "pantoprazole",
+        "protonix",
+        "esomeprazole",
+        "nexium",
+        "proton pump inhibitor"
+      ],
+      "abbreviations": [
+        "PPI"
+      ],
+      "definition": "Medicines that reduce stomach acid production."
+    },
+    {
+      "id": "antacid",
+      "term": "Antacid",
+      "category": "medication",
+      "synonyms": [
+        "antacids",
+        "tums",
+        "famotidine",
+        "pepcid"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that neutralize or reduce stomach acid."
+    },
+    {
+      "id": "antibiotic",
+      "term": "Antibiotic",
+      "category": "medication",
+      "synonyms": [
+        "antibiotics",
+        "amoxicillin",
+        "augmentin",
+        "azithromycin",
+        "z pack",
+        "zpack",
+        "doxycycline",
+        "ciprofloxacin",
+        "cipro",
+        "penicillin",
+        "cephalexin",
+        "keflex"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that treat bacterial infections; they do not work on viruses."
+    },
+    {
+      "id": "antihistamine",
+      "term": "Antihistamine",
+      "category": "medication",
+      "synonyms": [
+        "antihistamines",
+        "benadryl",
+        "diphenhydramine",
+        "zyrtec",
+        "cetirizine",
+        "claritin",
+        "loratadine",
+        "allegra",
+        "fexofenadine"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that relieve allergy symptoms."
+    },
+    {
+      "id": "corticosteroid",
+      "term": "Corticosteroid",
+      "category": "medication",
+      "synonyms": [
+        "steroid",
+        "steroids",
+        "prednisone",
+        "prednisolone",
+        "hydrocortisone",
+        "cortisone"
+      ],
+      "abbreviations": [],
+      "definition": "Anti-inflammatory medicines that calm the immune system."
+    },
+    {
+      "id": "albuterol",
+      "term": "Albuterol",
+      "category": "medication",
+      "synonyms": [
+        "salbutamol",
+        "ventolin",
+        "proair",
+        "rescue inhaler",
+        "inhaler"
+      ],
+      "abbreviations": [],
+      "definition": "A fast-acting inhaled medicine that opens the airways."
+    },
+    {
+      "id": "antidepressant",
+      "term": "Antidepressant",
+      "category": "medication",
+      "synonyms": [
+        "antidepressants",
+        "ssri",
+        "ssris",
+        "sertraline",
+        "zoloft",
+        "fluoxetine",
+        "prozac",
+        "escitalopram",
+        "lexapro",
+        "citalopram",
+        "bupropion",
+        "wellbutrin"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines that treat depression and some anxiety disorders."
+    },
+    {
+      "id": "benzodiazepine",
+      "term": "Benzodiazepine",
+      "category": "medication",
+      "synonyms": [
+        "benzodiazepines",
+        "benzos",
+        "xanax",
+        "alprazolam",
+        "ativan",
+        "lorazepam",
+        "valium",
+        "diazepam",
+        "klonopin",
+        "clonazepam"
+      ],
+      "abbreviations": [],
+      "definition": "Sedating medicines for anxiety or seizures; can be habit-forming."
+    },
+    {
+      "id": "opioid",
+      "term": "Opioid",
+      "category": "medication",
+      "synonyms": [
+        "opioids",
+        "opiate",
+        "opiates",
+        "oxycodone",
+        "hydrocodone",
+        "vicodin",
+        "percocet",
+        "morphine",
+        "codeine",
+        "tramadol",
+        "fentanyl"
+      ],
+      "abbreviations": [],
+      "definition": "Strong pain relievers that carry risks of dependence and overdose."
+    },
+    {
+      "id": "gabapentin",
+      "term": "Gabapentin",
+      "category": "medication",
+      "synonyms": [
+        "neurontin",
+        "pregabalin",
+        "lyrica"
+      ],
+      "abbreviations": [],
+      "definition": "Medicines used for nerve pain and some seizures."
+    },
+    {
+      "id": "epinephrine",
+      "term": "Epinephrine",
+      "category": "medication",
+      "synonyms": [
+        "epipen",
+        "epi pen",
+        "adrenaline"
+      ],
+      "abbreviations": [],
+      "definition": "An emergency medicine for severe allergic reactions."
+    },
+    {
+      "id": "vaccine",
+      "term": "Vaccine",
+      "category": "medication",
+      "synonyms": [
+        "vaccines",
+        "vaccination",
+        "immunization",
+        "flu shot",
+        "booster shot"
+      ],
+      "abbreviations": [],
+      "definition": "A preparation that trains the immune system to fight a specific disease."
+    },
+    {
+      "id": "blood_pressure",
+      "term": "Blood pressure",
+      "category": "test",
+      "synonyms": [
+        "blood pressure",
+        "blood pressure reading",
+        "systolic",
+        "diastolic"
+      ],
+      "abbreviations": [
+        "BP"
+      ],
+      "definition": "The force of blood against artery walls, written as systolic over diastolic."
+    },
+    {
+      "id": "blood_glucose",
+      "term": "Blood glucose",
+      "category": "test",
+      "synonyms": [
+        "blood glucose",
+        "blood sugar",
+        "glucose level",
+        "fasting glucose",
+        "sugar levels",
+        "glucose"
+      ],
+      "abbreviations": [],
+      "definition": "The amount of sugar in the blood."
+    },
+    {
+      "id": "a1c",
+      "term": "Hemoglobin A1c",
+      "category": "test",
+      "synonyms": [
+        "a1c",
+        "hba1c",
+        "hemoglobin a1c",
+        "glycated hemoglobin"
+      ],
+      "abbreviations": [],
+      "definition": "A blood test showing average blood sugar over about three months."
+    },
+    {
+      "id": "cholesterol_test",
+      "term": "Lipid panel",
+      "category": "test",
+      "synonyms": [
+        "lipid panel",
+        "cholesterol test",
+        "ldl",
+        "hdl",
+        "triglycerides",
+        "cholesterol"
+      ],
+      "abbreviations": [],
+      "definition": "Blood tests measuring cholesterol and triglycerides."
+    },
+    {
+      "id": "cbc",
+      "term": "Complete blood count",
+      "category": "test",
+      "synonyms": [
+        "complete blood count",
+        "blood count",
+        "white blood cell count",
+        "hemoglobin",
+        "platelets"
+      ],
+      "abbreviations": [
+        "CBC",
+        "WBC"
+      ],
+      "definition": "A blood test counting red cells, white cells, and platelets."
+    },
+    {
+      "id": "metabolic_panel",
+      "term": "Metabolic panel",
+      "category": "test",
+      "synonyms": [
+        "metabolic panel",
+        "basic metabolic panel",
+        "comprehensive metabolic panel",
+        "creatinine",
+        "egfr",
+        "kidney function test",
+        "liver function test",
+        "liver enzymes"
+      ],
+      "abbreviations": [
+        "BMP",
+        "CMP",
+        "LFT",
+        "LFTs"
+      ],
+      "definition": "Blood tests that check kidney function, liver function, electrolytes, and glucose."
+    },
+    {
+      "id": "thyroid_test",
+      "term": "Thyroid function test",
+      "category": "test",
+      "synonyms": [
+        "thyroid test",
+        "thyroid function test",
+        "thyroid panel"
+      ],
+      "abbreviations": [
+        "TSH",
+        "T4"
+      ],
+      "definition": "Blood tests that check how well the thyroid is working."
+    },
+    {
+      "id": "ecg",
+      "term": "Electrocardiogram",
+      "category": "test",
+      "synonyms": [
+        "electrocardiogram",
+        "heart tracing"
+      ],
+      "abbreviations": [
+        "ECG",
+        "EKG"
+      ],
+      "definition": "A test that records the heart's electrical activity."
+    },
+    {
+      "id": "echocardiogram",
+      "term": "Echocardiogram",
+      "category": "test",
+      "synonyms": [
+        "echo",
+        "heart ultrasound",
+        "cardiac ultrasound"
+      ],
+      "abbreviations": [],
+      "definition": "An ultrasound of the heart."
+    },
+    {
+      "id": "xray",
+      "term": "X-ray",
+      "category": "test",
+      "synonyms": [
+        "x ray",
+        "xray",
+        "x rays",
+        "radiograph",
+        "chest x ray"
+      ],
+      "abbreviations": [
+        "CXR"
+      ],
+      "definition": "An imaging test that uses radiation to view bones and some organs."
+    },
+    {
+      "id": "ct_scan",
+      "term": "CT scan",
+      "category": "test",
+      "synonyms": [
+        "ct scan",
+        "cat scan",
+        "computed tomography"
+      ],
+      "abbreviations": [
+        "CT"
+      ],
+      "definition": "Detailed cross-sectional X-ray imaging of the body."
+    },
+    {
+      "id": "mri",
+      "term": "MRI",
+      "category": "test",
+      "synonyms": [
+        "mri scan",
+        "magnetic resonance imaging"
+      ],
+      "abbreviations": [
+        "MRI"
+      ],
+      "definition": "Imaging that uses magnets and radio waves to view soft tissues."
+    },
+    {
+      "id": "ultrasound",
+      "term": "Ultrasound",
+      "category": "test",
+      "synonyms": [
+        "sonogram",
+        "ultrasound scan"
+      ],
+      "abbreviations": [],
+      "definition": "Imaging that uses sound waves to see inside the body."
+    },
+    {
+      "id": "urinalysis",
+      "term": "Urinalysis",
+      "category": "test",
+      "synonyms": [
+        "urine test",
+        "urine sample",
+        "urine culture"
+      ],
+      "abbreviations": [],
+      "definition": "A test of the urine for infection, blood, sugar, and more."
+    },
+    {
+      "id": "biopsy",
+      "term": "Biopsy",
+      "category": "test",
+      "synonyms": [
+        "tissue sample",
+        "biopsied"
+      ],
+      "abbreviations": [],
+      "definition": "Removal of a small tissue sample for lab examination."
+    },
+    {
+      "id": "mammogram",
+      "term": "Mammogram",
+      "category": "test",
+      "synonyms": [
+        "mammography",
+        "breast screening"
+      ],
+      "abbreviations": [],
+      "definition": "An X-ray screening test for breast cancer."
+    },
+    {
+      "id": "colonoscopy",
+      "term": "Colonoscopy",
+      "category": "test",
+      "synonyms": [
+        "colon screening"
+      ],
+      "abbreviations": [],
+      "definition": "An exam of the colon with a camera to look for polyps or cancer."
+    },
+    {
+      "id": "endoscopy",
+      "term": "Endoscopy",
+      "category": "test",
+      "synonyms": [
+        "upper endoscopy",
+        "egd"
+      ],
+      "abbreviations": [],
+      "definition": "A camera exam of the digestive tract."
+    },
+    {
+      "id": "covid_test",
+      "term": "COVID-19 test",
+      "category": "test",
+      "synonyms": [
+        "covid test",
+        "pcr test",
+        "rapid test",
+        "antigen test"
+      ],
+      "abbreviations": [],
+      "definition": "A test that detects current infection with the COVID-19 virus."
+    },
+    {
+      "id": "bmi",
+      "term": "Body mass index",
+      "category": "test",
+      "synonyms": [
+        "body mass index"
+      ],
+      "abbreviations": [
+        "BMI"
+      ],
+      "definition": "A screening number based on height and weight."
+    },
+    {
+      "id": "heart_rate",
+      "term": "Heart rate",
+      "category": "test",
+      "synonyms": [
+        "heart rate",
+        "pulse",
+        "resting heart rate"
+      ],
+      "abbreviations": [
+        "HR"
+      ],
+      "definition": "The number of heartbeats per minute."
+    },
+    {
+      "id": "surgery",
+      "term": "Surgery",
+      "category": "procedure",
+      "synonyms": [
+        "operation",
+        "surgical procedure",
+        "surgeries"
+      ],
+      "abbreviations": [],
+      "definition": "A procedure that treats a condition by operating on the body."
+    },
+    {
+      "id": "knee_replacement",
+      "term": "Knee replacement",
+      "category": "procedure",
+      "synonyms": [
+        "knee replacement",
+        "total knee replacement",
+        "total knee arthroplasty"
+      ],
+      "abbreviations": [
+        "TKA",
+        "TKR"
+      ],
+      "definition": "Surgery that replaces a damaged knee joint with an artificial one."
+    },
+    {
+      "id": "hip_replacement",
+      "term": "Hip replacement",
+      "category": "procedure",
+      "synonyms": [
+        "hip replacement",
+        "total hip replacement",
+        "total hip arthroplasty"
+      ],
+      "abbreviations": [
+        "THA",
+        "THR"
+      ],
+      "definition": "Surgery that replaces a damaged hip joint with an artificial one."
+    },
+    {
+      "id": "acl_reconstruction",
+      "term": "ACL reconstruction",
+      "category": "procedure",
+      "synonyms": [
+        "acl surgery",
+        "acl reconstruction",
+        "acl repair"
+      ],
+      "abbreviations": [],
+      "definition": "Surgery to rebuild a torn anterior cruciate ligament in the knee."
+    },
+    {
+      "id": "angioplasty",
+      "term": "Angioplasty",
+      "category": "procedure",
+      "synonyms": [
+        "stent",
+        "stents",
+        "cardiac stent",
+        "cardiac catheterization",
+        "heart cath"
+      ],
+      "abbreviations": [
+        "PCI"
+      ],
+      "definition": "A procedure that opens narrowed arteries, often placing a stent."
+    },
+    {
+      "id": "bypass_surgery",
+      "term": "Coronary artery bypass graft",
+      "category": "procedure",
+      "synonyms": [
+        "bypass surgery",
+        "heart bypass",
+        "coronary bypass"
+      ],
+      "abbreviations": [
+        "CABG"
+      ],
+      "definition": "Surgery that reroutes blood around blocked heart arteries."
+    },
+    {
+      "id": "physical_therapy",
+      "term": "Physical therapy",
+      "category": "procedure",
+      "synonyms": [
+        "physical therapy",
+        "physiotherapy",
+        "physio",
+        "rehab",
+        "rehabilitation"
+      ],
+      "abbreviations": [
+        "PT"
+      ],
+      "definition": "Treatment using exercise and movement to restore function."
+    },
+    {
+      "id": "dialysis",
+      "term": "Dialysis",
+      "category": "procedure",
+      "synonyms": [
+        "hemodialysis",
+        "peritoneal dialysis"
+      ],
+      "abbreviations": [],
+      "definition": "A treatment that filters the blood when the kidneys cannot."
+    },
+    {
+      "id": "chemotherapy",
+      "term": "Chemotherapy",
+      "category": "procedure",
+      "synonyms": [
+        "chemo"
+      ],
+      "abbreviations": [],
+      "definition": "Drug treatment that kills fast-growing cancer cells."
+    },
+    {
+      "id": "radiation_therapy",
+      "term": "Radiation therapy",
+      "category": "procedure",
+      "synonyms": [
+        "radiation therapy",
+        "radiotherapy",
+        "radiation treatment"
+      ],
+      "abbreviations": [],
+      "definition": "Cancer treatment using high-energy radiation."
+    },
+    {
+      "id": "cpr",
+      "term": "Cardiopulmonary resuscitation",
+      "category": "procedure",
+      "synonyms": [
+        "cardiopulmonary resuscitation",
+        "chest compressions"
+      ],
+      "abbreviations": [
+        "CPR"
+      ],
+      "definition": "Emergency chest compressions and breaths when the heart stops."
+    },
+    {
+      "id": "appendectomy",
+      "term": "Appendectomy",
+      "category": "procedure",
+      "synonyms": [
+        "appendix removal",
+        "appendix removed"
+      ],
+      "abbreviations": [],
+      "definition": "Surgery to remove the appendix."
+    },
+    {
+      "id": "cholecystectomy",
+      "term": "Cholecystectomy",
+      "category": "procedure",
+      "synonyms": [
+        "gallbladder removal",
+        "gallbladder surgery",
+        "gallbladder removed"
+      ],
+      "abbreviations": [],
+      "definition": "Surgery to remove the gallbladder."
+    },
+    {
+      "id": "c_section",
+      "term": "Cesarean section",
+      "category": "procedure",
+      "synonyms": [
+        "c section",
+        "cesarean",
+        "caesarean",
+        "cesarean section",
+        "caesarean section"
+      ],
+      "abbreviations": [],
+      "definition": "Surgical delivery of a baby through the abdomen."
+    },
+    {
+      "id": "heart",
+      "term": "Heart",
+      "category": "anatomy",
+      "synonyms": [
+        "cardiac"
+      ],
+      "abbreviations": [],
+      "definition": "The muscular organ that pumps blood through the body."
+    },
+    {
+      "id": "lungs",
+      "term": "Lungs",
+      "category": "anatomy",
+      "synonyms": [
+        "lung",
+        "pulmonary"
+      ],
+      "abbreviations": [],
+      "definition": "The paired organs that exchange oxygen and carbon dioxide."
+    },
+    {
+      "id": "kidneys",
+      "term": "Kidneys",
+      "category": "anatomy",
+      "synonyms": [
+        "kidney",
+        "renal"
+      ],
+      "abbreviations": [],
+      "definition": "Organs that filter waste from the blood and make urine."
+    },
+    {
+      "id": "liver",
+      "term": "Liver",
+      "category": "anatomy",
+      "synonyms": [
+        "hepatic"
+      ],
+      "abbreviations": [],
+      "definition": "A large organ that processes nutrients, medicines, and toxins."
+    },
+    {
+      "id": "thyroid",
+      "term": "Thyroid gland",
+      "category": "anatomy",
+      "synonyms": [
+        "thyroid",
+        "thyroid gland"
+      ],
+      "abbreviations": [],
+      "definition": "A gland in the neck that controls metabolism through hormones."
+    },
+    {
+      "id": "pancreas",
+      "term": "Pancreas",
+      "category": "anatomy",
+      "synonyms": [
+        "pancreatic"
+      ],
+      "abbreviations": [],
+      "definition": "An organ that makes digestive enzymes and insulin."
+    },
+    {
+      "id": "knee",
+      "term": "Knee",
+      "category": "anatomy",
+      "synonyms": [
+        "knees"
+      ],
+      "abbreviations": [],
+      "definition": "The joint between the thigh and the lower leg."
+    },
+    {
+      "id": "spine",
+      "term": "Spine",
+      "category": "anatomy",
+      "synonyms": [
+        "spinal",
+        "vertebrae",
+        "lumbar spine",
+        "cervical spine"
+      ],
+      "abbreviations": [],
+      "definition": "The column of bones that supports the back and protects the spinal cord."
+    },
+    {
+      "id": "acl",
+      "term": "Anterior cruciate ligament",
+      "category": "anatomy",
+      "synonyms": [
+        "anterior cruciate ligament"
+      ],
+      "abbreviations": [
+        "ACL"
+      ],
+      "definition": "A key ligament that stabilizes the knee."
+    },
+    {
+      "id": "rotator_cuff",
+      "term": "Rotator cuff",
+      "category": "anatomy",
+      "synonyms": [
+        "rotator cuff"
+      ],
+      "abbreviations": [],
+      "definition": "The group of muscles and tendons that stabilize the shoulder."
+    }
+  ]
+}

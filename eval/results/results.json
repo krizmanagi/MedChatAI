@@ -1,0 +1,4006 @@
+{
+  "generated_at": "2026-10-01T22:43:53+00:00",
+  "dataset": "dataset.jsonl",
+  "examples": 90,
+  "labeled_concepts": 167,
+  "out_of_lexicon_terms": 10,
+  "lexicon_version": "1.0.0",
+  "lexicon_concepts": 181,
+  "methods": {
+    "lexicon-exact": {
+      "overall": {
+        "precision": 0.9874,
+        "recall": 0.9401,
+        "f1": 0.9632,
+        "strict_recall": 0.887,
+        "negation_accuracy": 0.9745,
+        "tp": 157,
+        "fp": 2,
+        "fn": 10,
+        "out_of_lexicon": 10
+      },
+      "by_category": {
+        "anatomy": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "condition": {
+          "precision": 1.0,
+          "recall": 0.9531,
+          "f1": 0.976,
+          "strict_recall": 0.9531,
+          "negation_accuracy": null,
+          "tp": 61,
+          "fp": 0,
+          "fn": 3,
+          "out_of_lexicon": 0
+        },
+        "medication": {
+          "precision": 1.0,
+          "recall": 0.9259,
+          "f1": 0.9615,
+          "strict_recall": 0.9259,
+          "negation_accuracy": null,
+          "tp": 25,
+          "fp": 0,
+          "fn": 2,
+          "out_of_lexicon": 0
+        },
+        "procedure": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "symptom": {
+          "precision": 1.0,
+          "recall": 0.8864,
+          "f1": 0.9398,
+          "strict_recall": 0.8864,
+          "negation_accuracy": null,
+          "tp": 39,
+          "fp": 0,
+          "fn": 5,
+          "out_of_lexicon": 0
+        },
+        "test": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        }
+      },
+      "by_tag": {
+        "abbreviation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.9286,
+          "negation_accuracy": 1.0,
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "anatomy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "brand": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.8571,
+          "negation_accuracy": 1.0,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 1
+        },
+        "clinical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.8462,
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "condition": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "distractor": {
+          "precision": 0.0,
+          "recall": 1.0,
+          "f1": 0.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "hard": {
+          "precision": 0.6667,
+          "recall": 0.2222,
+          "f1": 0.3333,
+          "strict_recall": 0.2,
+          "negation_accuracy": 1.0,
+          "tp": 2,
+          "fp": 1,
+          "fn": 7,
+          "out_of_lexicon": 1
+        },
+        "lab": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.8824,
+          "negation_accuracy": 1.0,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "lay": {
+          "precision": 0.9667,
+          "recall": 0.7838,
+          "f1": 0.8657,
+          "strict_recall": 0.725,
+          "negation_accuracy": 1.0,
+          "tp": 29,
+          "fp": 1,
+          "fn": 8,
+          "out_of_lexicon": 3
+        },
+        "medication": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.9231,
+          "negation_accuracy": 1.0,
+          "tp": 24,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "misspelling": {
+          "precision": 1.0,
+          "recall": 0.5714,
+          "f1": 0.7273,
+          "strict_recall": 0.5714,
+          "negation_accuracy": 1.0,
+          "tp": 4,
+          "fp": 0,
+          "fn": 3,
+          "out_of_lexicon": 0
+        },
+        "negation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.8947,
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "no_terms": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "procedure": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.9,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "symptom": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "test": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.875,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        }
+      },
+      "examples": [
+        {
+          "id": "q001",
+          "text": "What does it mean if my blood pressure is 150/95? Is that hypertension?",
+          "expected": [
+            "blood_pressure",
+            "hypertension"
+          ],
+          "predicted": [
+            "blood_pressure",
+            "hypertension"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "clinical"
+          ]
+        },
+        {
+          "id": "q002",
+          "text": "I was just diagnosed with type 2 diabetes and started metformin. What side effects should I watch for?",
+          "expected": [
+            "metformin",
+            "type_2_diabetes"
+          ],
+          "predicted": [
+            "metformin",
+            "type_2_diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "clinical"
+          ]
+        },
+        {
+          "id": "q003",
+          "text": "My A1c came back at 6.8. Does that mean I have diabetes?",
+          "expected": [
+            "a1c",
+            "diabetes"
+          ],
+          "predicted": [
+            "a1c",
+            "diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q004",
+          "text": "Can I take ibuprofen while I'm on blood thinners?",
+          "expected": [
+            "anticoagulant",
+            "ibuprofen"
+          ],
+          "predicted": [
+            "anticoagulant",
+            "ibuprofen"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication",
+            "lay"
+          ]
+        },
+        {
+          "id": "q005",
+          "text": "I have a cough and sore throat but no fever. Should I see a doctor?",
+          "expected": [
+            "cough",
+            "fever",
+            "sore_throat"
+          ],
+          "predicted": [
+            "cough",
+            "fever",
+            "sore_throat"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "symptom"
+          ]
+        },
+        {
+          "id": "q006",
+          "text": "What is the difference between a CT scan and an MRI?",
+          "expected": [
+            "ct_scan",
+            "mri"
+          ],
+          "predicted": [
+            "ct_scan",
+            "mri"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q007",
+          "text": "My dad had a heart attack last year. What are the warning signs?",
+          "expected": [
+            "myocardial_infarction"
+          ],
+          "predicted": [
+            "myocardial_infarction"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q008",
+          "text": "Pt has HTN and T2DM, currently on lisinopril.",
+          "expected": [
+            "hypertension",
+            "lisinopril",
+            "type_2_diabetes"
+          ],
+          "predicted": [
+            "hypertension",
+            "lisinopril",
+            "type_2_diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q009",
+          "text": "Is it normal to feel dizzy after starting amlodipine?",
+          "expected": [
+            "amlodipine",
+            "dizziness"
+          ],
+          "predicted": [
+            "amlodipine",
+            "dizziness"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication",
+            "symptom"
+          ]
+        },
+        {
+          "id": "q010",
+          "text": "How long does a UTI usually last on antibiotics?",
+          "expected": [
+            "antibiotic",
+            "uti"
+          ],
+          "predicted": [
+            "antibiotic",
+            "uti"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q011",
+          "text": "I keep getting migraines with nausea and blurry vision.",
+          "expected": [
+            "blurred_vision",
+            "migraine",
+            "nausea"
+          ],
+          "predicted": [
+            "blurred_vision",
+            "migraine",
+            "nausea"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q012",
+          "text": "What's a normal cholesterol level? My LDL is 160.",
+          "expected": [
+            "cholesterol_test"
+          ],
+          "predicted": [
+            "cholesterol_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q013",
+          "text": "I think I have diabetis, I'm always thirsty and peeing a lot.",
+          "expected": [
+            "diabetes",
+            "excessive_thirst",
+            "frequent_urination"
+          ],
+          "predicted": [
+            "excessive_thirst",
+            "frequent_urination"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "diabetes"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling",
+            "lay"
+          ]
+        },
+        {
+          "id": "q014",
+          "text": "Can I take tylenol and advil together for a headache?",
+          "expected": [
+            "acetaminophen",
+            "headache",
+            "ibuprofen"
+          ],
+          "predicted": [
+            "acetaminophen",
+            "headache",
+            "ibuprofen"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q015",
+          "text": "My son has asthma. When should he use his rescue inhaler?",
+          "expected": [
+            "albuterol",
+            "asthma"
+          ],
+          "predicted": [
+            "albuterol",
+            "asthma"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q016",
+          "text": "I've had lower back pain for weeks and now tingling down my leg. Could it be sciatica?",
+          "expected": [
+            "back_pain",
+            "numbness",
+            "sciatica"
+          ],
+          "predicted": [
+            "back_pain",
+            "numbness",
+            "sciatica"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q017",
+          "text": "What does an echocardiogram show that an EKG doesn't?",
+          "expected": [
+            "ecg",
+            "echocardiogram"
+          ],
+          "predicted": [
+            "ecg",
+            "echocardiogram"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q018",
+          "text": "Denies chest pain or shortness of breath, reports mild fatigue.",
+          "expected": [
+            "chest_pain",
+            "fatigue",
+            "shortness_of_breath"
+          ],
+          "predicted": [
+            "chest_pain",
+            "fatigue",
+            "shortness_of_breath"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q019",
+          "text": "How long is recovery after a knee replacement?",
+          "expected": [
+            "knee_replacement"
+          ],
+          "predicted": [
+            "knee_replacement"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q020",
+          "text": "I tore my ACL playing soccer. Do I need ACL surgery or just physical therapy?",
+          "expected": [
+            "acl",
+            "acl_reconstruction",
+            "physical_therapy"
+          ],
+          "predicted": [
+            "acl",
+            "acl_reconstruction",
+            "physical_therapy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure",
+            "anatomy"
+          ]
+        },
+        {
+          "id": "q021",
+          "text": "Is omeprazole safe to take every day for acid reflux?",
+          "expected": [
+            "gerd",
+            "omeprazole"
+          ],
+          "predicted": [
+            "gerd",
+            "omeprazole"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q022",
+          "text": "What are the early signs of Parkinson's disease?",
+          "expected": [
+            "parkinsons"
+          ],
+          "predicted": [
+            "parkinsons"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q023",
+          "text": "My mom has dementia and keeps getting confused at night.",
+          "expected": [
+            "confusion",
+            "dementia"
+          ],
+          "predicted": [
+            "confusion",
+            "dementia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q024",
+          "text": "Can anxiety cause heart palpitations?",
+          "expected": [
+            "anxiety",
+            "palpitations"
+          ],
+          "predicted": [
+            "anxiety",
+            "palpitations"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q025",
+          "text": "I ran 5 mi this morning and my knees are fine. Any tips for marathon training?",
+          "expected": [],
+          "predicted": [
+            "knee"
+          ],
+          "false_positives": [
+            "knee"
+          ],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "distractor"
+          ]
+        },
+        {
+          "id": "q026",
+          "text": "What's the best way to stay motivated to exercise in the winter?",
+          "expected": [],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "no_terms"
+          ]
+        },
+        {
+          "id": "q027",
+          "text": "I got a flu shot yesterday and now my arm is sore. Is that normal?",
+          "expected": [
+            "vaccine"
+          ],
+          "predicted": [
+            "vaccine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "sore arm"
+          ],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q028",
+          "text": "What is the difference between osteoarthritis and rheumatoid arthritis?",
+          "expected": [
+            "osteoarthritis",
+            "rheumatoid_arthritis"
+          ],
+          "predicted": [
+            "osteoarthritis",
+            "rheumatoid_arthritis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q029",
+          "text": "Should I worry about a CBC showing low hemoglobin?",
+          "expected": [
+            "anemia",
+            "cbc"
+          ],
+          "predicted": [
+            "anemia",
+            "cbc"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q030",
+          "text": "My doctor wants me to get a colonoscopy because of blood in my stool.",
+          "expected": [
+            "blood_in_stool",
+            "colonoscopy"
+          ],
+          "predicted": [
+            "blood_in_stool",
+            "colonoscopy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q031",
+          "text": "Does semaglutide help with weight loss if you don't have diabetes?",
+          "expected": [
+            "diabetes",
+            "glp1_agonist",
+            "weight_loss"
+          ],
+          "predicted": [
+            "diabetes",
+            "glp1_agonist",
+            "weight_loss"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "medication"
+          ]
+        },
+        {
+          "id": "q032",
+          "text": "What causes kidney stones and how do you pass them?",
+          "expected": [
+            "kidney_stones"
+          ],
+          "predicted": [
+            "kidney_stones"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q033",
+          "text": "I have hypothyroidism and take levothyroxine. Should I take it with food?",
+          "expected": [
+            "hypothyroidism",
+            "levothyroxine"
+          ],
+          "predicted": [
+            "hypothyroidism",
+            "levothyroxine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q034",
+          "text": "Woke up with a stuffy nose, chills and body aches. Covid or the flu?",
+          "expected": [
+            "chills",
+            "covid_19",
+            "influenza",
+            "muscle_pain",
+            "nasal_congestion"
+          ],
+          "predicted": [
+            "chills",
+            "covid_19",
+            "influenza",
+            "muscle_pain",
+            "nasal_congestion"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q035",
+          "text": "What are the side effects of prednisone?",
+          "expected": [
+            "corticosteroid"
+          ],
+          "predicted": [
+            "corticosteroid"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q036",
+          "text": "My father has COPD and uses oxygen at home. Is pneumonia a big risk?",
+          "expected": [
+            "copd",
+            "pneumonia"
+          ],
+          "predicted": [
+            "copd",
+            "pneumonia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "oxygen therapy"
+          ],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q037",
+          "text": "I've been feeling depressed and can't sleep. Would an antidepressant help?",
+          "expected": [
+            "antidepressant",
+            "depression",
+            "insomnia"
+          ],
+          "predicted": [
+            "antidepressant",
+            "depression",
+            "insomnia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q038",
+          "text": "What is atrial fibrillation and why does it increase stroke risk?",
+          "expected": [
+            "atrial_fibrillation",
+            "stroke"
+          ],
+          "predicted": [
+            "atrial_fibrillation",
+            "stroke"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q039",
+          "text": "I have a burning feeling when I pee and need to go constantly.",
+          "expected": [
+            "frequent_urination",
+            "painful_urination"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "frequent_urination",
+            "painful_urination"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q040",
+          "text": "Is gabapentin addictive? I take it for nerve pain.",
+          "expected": [
+            "gabapentin"
+          ],
+          "predicted": [
+            "gabapentin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "nerve pain"
+          ],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q041",
+          "text": "My toddler threw up twice and has diarrhea. How do I prevent dehydration?",
+          "expected": [
+            "dehydration",
+            "diarrhea",
+            "vomiting"
+          ],
+          "predicted": [
+            "dehydration",
+            "diarrhea",
+            "vomiting"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q042",
+          "text": "Can a herniated disc heal without surgery?",
+          "expected": [
+            "herniated_disc",
+            "surgery"
+          ],
+          "predicted": [
+            "herniated_disc",
+            "surgery"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "surgery"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q043",
+          "text": "What's the recovery like after gallbladder removal?",
+          "expected": [
+            "cholecystectomy"
+          ],
+          "predicted": [
+            "cholecystectomy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "procedure"
+          ]
+        },
+        {
+          "id": "q044",
+          "text": "I'm allergic to penicillin. What other antibiotics can I take for strep throat?",
+          "expected": [
+            "allergy",
+            "antibiotic",
+            "strep_throat"
+          ],
+          "predicted": [
+            "allergy",
+            "antibiotic",
+            "strep_throat"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q045",
+          "text": "What does a high TSH mean on a thyroid test?",
+          "expected": [
+            "thyroid_test"
+          ],
+          "predicted": [
+            "thyroid_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q046",
+          "text": "Does GERD cause chest pain that feels like a heart attack?",
+          "expected": [
+            "chest_pain",
+            "gerd",
+            "myocardial_infarction"
+          ],
+          "predicted": [
+            "chest_pain",
+            "gerd",
+            "myocardial_infarction"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q047",
+          "text": "Rash on both arms that is very itchy, no fever. Could it be eczema?",
+          "expected": [
+            "eczema",
+            "fever",
+            "itching",
+            "rash"
+          ],
+          "predicted": [
+            "eczema",
+            "fever",
+            "itching",
+            "rash"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation"
+          ]
+        },
+        {
+          "id": "q048",
+          "text": "How do statins lower cholesterol?",
+          "expected": [
+            "cholesterol_test",
+            "statin"
+          ],
+          "predicted": [
+            "cholesterol_test",
+            "statin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q049",
+          "text": "My grandmother broke her hip and they found osteoporosis.",
+          "expected": [
+            "fracture",
+            "osteoporosis"
+          ],
+          "predicted": [
+            "osteoporosis"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "fracture"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q050",
+          "text": "What is the normal resting heart rate for adults?",
+          "expected": [
+            "heart_rate"
+          ],
+          "predicted": [
+            "heart_rate"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q051",
+          "text": "I have IBS and get bloated after meals. Any diet tips?",
+          "expected": [
+            "bloating",
+            "ibs"
+          ],
+          "predicted": [
+            "bloating",
+            "ibs"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q052",
+          "text": "Can you get shingles twice?",
+          "expected": [
+            "shingles"
+          ],
+          "predicted": [
+            "shingles"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q053",
+          "text": "Started lisinoprill last week and now I have a dry cough.",
+          "expected": [
+            "cough",
+            "lisinopril"
+          ],
+          "predicted": [
+            "cough"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "lisinopril"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling"
+          ]
+        },
+        {
+          "id": "q054",
+          "text": "My ankles are swollen at the end of the day. Is that heart failure?",
+          "expected": [
+            "edema",
+            "heart_failure"
+          ],
+          "predicted": [
+            "heart_failure"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "edema"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q055",
+          "text": "What should I expect during chemo for breast cancer?",
+          "expected": [
+            "cancer",
+            "chemotherapy"
+          ],
+          "predicted": [
+            "cancer",
+            "chemotherapy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q056",
+          "text": "Is it safe to drink alcohol while taking xanax?",
+          "expected": [
+            "benzodiazepine"
+          ],
+          "predicted": [
+            "benzodiazepine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "alcohol"
+          ],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q057",
+          "text": "Hx of CAD s/p CABG, now with new onset AF.",
+          "expected": [
+            "atrial_fibrillation",
+            "bypass_surgery",
+            "coronary_artery_disease"
+          ],
+          "predicted": [
+            "atrial_fibrillation",
+            "bypass_surgery",
+            "coronary_artery_disease"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q058",
+          "text": "What does it mean when your urine test shows protein?",
+          "expected": [
+            "urinalysis"
+          ],
+          "predicted": [
+            "urinalysis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "proteinuria"
+          ],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q059",
+          "text": "I fainted in the shower this morning and felt lightheaded before.",
+          "expected": [
+            "dizziness",
+            "syncope"
+          ],
+          "predicted": [
+            "dizziness",
+            "syncope"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q060",
+          "text": "Do I need a prescription for an EpiPen if I have a peanut allergy?",
+          "expected": [
+            "allergy",
+            "epinephrine"
+          ],
+          "predicted": [
+            "allergy",
+            "epinephrine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q061",
+          "text": "Can sleep apnea cause high blood pressure?",
+          "expected": [
+            "hypertension",
+            "sleep_apnea"
+          ],
+          "predicted": [
+            "hypertension",
+            "sleep_apnea"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q062",
+          "text": "What's the difference between a cold and a sinus infection?",
+          "expected": [
+            "common_cold",
+            "sinusitis"
+          ],
+          "predicted": [
+            "common_cold",
+            "sinusitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q063",
+          "text": "My kid has pink eye. How contagious is it?",
+          "expected": [
+            "conjunctivitis"
+          ],
+          "predicted": [
+            "conjunctivitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q064",
+          "text": "I take warfarin. Which foods should I avoid?",
+          "expected": [
+            "warfarin"
+          ],
+          "predicted": [
+            "warfarin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q065",
+          "text": "Without any symptoms, should I still get a mammogram at 40?",
+          "expected": [
+            "mammogram"
+          ],
+          "predicted": [
+            "mammogram"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "mammogram"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q066",
+          "text": "Is gout related to what you eat?",
+          "expected": [
+            "gout"
+          ],
+          "predicted": [
+            "gout"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q067",
+          "text": "Severe stomach pain on the lower right side. Could it be appendicitis?",
+          "expected": [
+            "abdominal_pain",
+            "appendicitis"
+          ],
+          "predicted": [
+            "abdominal_pain",
+            "appendicitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q068",
+          "text": "My blood sugar drops in the afternoon and I get shaky. Is that hypoglycemia?",
+          "expected": [
+            "blood_glucose",
+            "hypoglycemia"
+          ],
+          "predicted": [
+            "blood_glucose",
+            "hypoglycemia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "shakiness"
+          ],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q069",
+          "text": "What is a normal BMI and is it accurate for athletes?",
+          "expected": [
+            "bmi"
+          ],
+          "predicted": [
+            "bmi"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q070",
+          "text": "I have psoriasis on my elbows. Do steroid creams help?",
+          "expected": [
+            "corticosteroid",
+            "psoriasis"
+          ],
+          "predicted": [
+            "corticosteroid",
+            "psoriasis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q071",
+          "text": "Can a concussion cause headaches weeks later?",
+          "expected": [
+            "concussion",
+            "headache"
+          ],
+          "predicted": [
+            "concussion",
+            "headache"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q072",
+          "text": "Patient negative for COVID, presents with wheezing and productive cough.",
+          "expected": [
+            "cough",
+            "covid_19",
+            "wheezing"
+          ],
+          "predicted": [
+            "cough",
+            "covid_19",
+            "wheezing"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "cough",
+            "wheezing"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q073",
+          "text": "Do I need to fast before a lipid panel?",
+          "expected": [
+            "cholesterol_test"
+          ],
+          "predicted": [
+            "cholesterol_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q074",
+          "text": "How is chronic kidney disease staged?",
+          "expected": [
+            "ckd"
+          ],
+          "predicted": [
+            "ckd"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q075",
+          "text": "What does a pulmonary embolism feel like?",
+          "expected": [
+            "pulmonary_embolism"
+          ],
+          "predicted": [
+            "pulmonary_embolism"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q076",
+          "text": "My heart keeps racing even when I'm sitting still.",
+          "expected": [
+            "palpitations"
+          ],
+          "predicted": [
+            "heart"
+          ],
+          "false_positives": [
+            "heart"
+          ],
+          "false_negatives": [
+            "palpitations"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q077",
+          "text": "Is acetominophen hard on the liver?",
+          "expected": [
+            "acetaminophen",
+            "liver"
+          ],
+          "predicted": [
+            "liver"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "acetaminophen"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling"
+          ]
+        },
+        {
+          "id": "q078",
+          "text": "I've been coughing up yellow phlegm for a week. Do I need antibiotics?",
+          "expected": [
+            "antibiotic",
+            "cough"
+          ],
+          "predicted": [
+            "antibiotic",
+            "cough"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "sputum"
+          ],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q079",
+          "text": "What are good questions to ask my new primary care doctor at a checkup?",
+          "expected": [],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "no_terms"
+          ]
+        },
+        {
+          "id": "q080",
+          "text": "Can Crohn's disease affect the joints?",
+          "expected": [
+            "ibd"
+          ],
+          "predicted": [
+            "ibd"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q081",
+          "text": "I was told I have prediabetes. Can I reverse it?",
+          "expected": [
+            "prediabetes"
+          ],
+          "predicted": [
+            "prediabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q082",
+          "text": "How do I know if a cut is infected? It's red and warm around the edges.",
+          "expected": [
+            "cellulitis"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "cellulitis"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "wound infection"
+          ],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q083",
+          "text": "My numbers: BP 128/82, HR 72, fasting glucose 102.",
+          "expected": [
+            "blood_glucose",
+            "blood_pressure",
+            "heart_rate"
+          ],
+          "predicted": [
+            "blood_glucose",
+            "blood_pressure",
+            "heart_rate"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation",
+            "lab"
+          ]
+        },
+        {
+          "id": "q084",
+          "text": "Does tramadol show up as an opioid on a drug test?",
+          "expected": [
+            "opioid"
+          ],
+          "predicted": [
+            "opioid"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "drug test"
+          ],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q085",
+          "text": "Is it MS or just a pinched nerve? My hands go numb.",
+          "expected": [
+            "multiple_sclerosis",
+            "numbness"
+          ],
+          "predicted": [
+            "multiple_sclerosis",
+            "numbness"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "pinched nerve"
+          ],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q086",
+          "text": "Can I exercise with a stent after angioplasty?",
+          "expected": [
+            "angioplasty"
+          ],
+          "predicted": [
+            "angioplasty"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q087",
+          "text": "My stomach hurts after I eat spicy food.",
+          "expected": [
+            "abdominal_pain"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "abdominal_pain"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q088",
+          "text": "What is a normal creatinine level for kidney function?",
+          "expected": [
+            "kidneys",
+            "metabolic_panel"
+          ],
+          "predicted": [
+            "kidneys",
+            "metabolic_panel"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q089",
+          "text": "I don't have high blood pressure but my doctor still prescribed a beta blocker for anxiety.",
+          "expected": [
+            "anxiety",
+            "hypertension",
+            "metoprolol"
+          ],
+          "predicted": [
+            "anxiety",
+            "hypertension",
+            "metoprolol"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation"
+          ]
+        },
+        {
+          "id": "q090",
+          "text": "Night sweats and losing weight without trying \u2014 should I be worried?",
+          "expected": [
+            "night_sweats",
+            "weight_loss"
+          ],
+          "predicted": [
+            "night_sweats",
+            "weight_loss"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        }
+      ]
+    },
+    "lexicon": {
+      "overall": {
+        "precision": 0.9877,
+        "recall": 0.9581,
+        "f1": 0.9726,
+        "strict_recall": 0.904,
+        "negation_accuracy": 0.975,
+        "tp": 160,
+        "fp": 2,
+        "fn": 7,
+        "out_of_lexicon": 10
+      },
+      "by_category": {
+        "anatomy": {
+          "precision": 0.6,
+          "recall": 1.0,
+          "f1": 0.75,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 3,
+          "fp": 2,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "condition": {
+          "precision": 1.0,
+          "recall": 0.9688,
+          "f1": 0.9841,
+          "strict_recall": 0.9688,
+          "negation_accuracy": null,
+          "tp": 62,
+          "fp": 0,
+          "fn": 2,
+          "out_of_lexicon": 0
+        },
+        "medication": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 27,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "procedure": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "symptom": {
+          "precision": 1.0,
+          "recall": 0.8864,
+          "f1": 0.9398,
+          "strict_recall": 0.8864,
+          "negation_accuracy": null,
+          "tp": 39,
+          "fp": 0,
+          "fn": 5,
+          "out_of_lexicon": 0
+        },
+        "test": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 21,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        }
+      },
+      "by_tag": {
+        "abbreviation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.9286,
+          "negation_accuracy": 1.0,
+          "tp": 26,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "anatomy": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 3,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "brand": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.8571,
+          "negation_accuracy": 1.0,
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 1
+        },
+        "clinical": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.8462,
+          "tp": 13,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "condition": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 18,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "distractor": {
+          "precision": 0.0,
+          "recall": 1.0,
+          "f1": 0.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 0,
+          "fp": 1,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "hard": {
+          "precision": 0.6667,
+          "recall": 0.2222,
+          "f1": 0.3333,
+          "strict_recall": 0.2,
+          "negation_accuracy": 1.0,
+          "tp": 2,
+          "fp": 1,
+          "fn": 7,
+          "out_of_lexicon": 1
+        },
+        "lab": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.8824,
+          "negation_accuracy": 1.0,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "lay": {
+          "precision": 0.9677,
+          "recall": 0.8108,
+          "f1": 0.8824,
+          "strict_recall": 0.75,
+          "negation_accuracy": 1.0,
+          "tp": 30,
+          "fp": 1,
+          "fn": 7,
+          "out_of_lexicon": 3
+        },
+        "medication": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 0.9231,
+          "negation_accuracy": 1.0,
+          "tp": 24,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 2
+        },
+        "misspelling": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 7,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "negation": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.8947,
+          "tp": 19,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "no_terms": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": null,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "procedure": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.9,
+          "tp": 10,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "symptom": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 1.0,
+          "tp": 15,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        },
+        "test": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "strict_recall": 1.0,
+          "negation_accuracy": 0.875,
+          "tp": 8,
+          "fp": 0,
+          "fn": 0,
+          "out_of_lexicon": 0
+        }
+      },
+      "examples": [
+        {
+          "id": "q001",
+          "text": "What does it mean if my blood pressure is 150/95? Is that hypertension?",
+          "expected": [
+            "blood_pressure",
+            "hypertension"
+          ],
+          "predicted": [
+            "blood_pressure",
+            "hypertension"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "clinical"
+          ]
+        },
+        {
+          "id": "q002",
+          "text": "I was just diagnosed with type 2 diabetes and started metformin. What side effects should I watch for?",
+          "expected": [
+            "metformin",
+            "type_2_diabetes"
+          ],
+          "predicted": [
+            "metformin",
+            "type_2_diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "clinical"
+          ]
+        },
+        {
+          "id": "q003",
+          "text": "My A1c came back at 6.8. Does that mean I have diabetes?",
+          "expected": [
+            "a1c",
+            "diabetes"
+          ],
+          "predicted": [
+            "a1c",
+            "diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q004",
+          "text": "Can I take ibuprofen while I'm on blood thinners?",
+          "expected": [
+            "anticoagulant",
+            "ibuprofen"
+          ],
+          "predicted": [
+            "anticoagulant",
+            "ibuprofen"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication",
+            "lay"
+          ]
+        },
+        {
+          "id": "q005",
+          "text": "I have a cough and sore throat but no fever. Should I see a doctor?",
+          "expected": [
+            "cough",
+            "fever",
+            "sore_throat"
+          ],
+          "predicted": [
+            "cough",
+            "fever",
+            "sore_throat"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "symptom"
+          ]
+        },
+        {
+          "id": "q006",
+          "text": "What is the difference between a CT scan and an MRI?",
+          "expected": [
+            "ct_scan",
+            "mri"
+          ],
+          "predicted": [
+            "ct_scan",
+            "mri"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q007",
+          "text": "My dad had a heart attack last year. What are the warning signs?",
+          "expected": [
+            "myocardial_infarction"
+          ],
+          "predicted": [
+            "myocardial_infarction"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q008",
+          "text": "Pt has HTN and T2DM, currently on lisinopril.",
+          "expected": [
+            "hypertension",
+            "lisinopril",
+            "type_2_diabetes"
+          ],
+          "predicted": [
+            "hypertension",
+            "lisinopril",
+            "type_2_diabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q009",
+          "text": "Is it normal to feel dizzy after starting amlodipine?",
+          "expected": [
+            "amlodipine",
+            "dizziness"
+          ],
+          "predicted": [
+            "amlodipine",
+            "dizziness"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication",
+            "symptom"
+          ]
+        },
+        {
+          "id": "q010",
+          "text": "How long does a UTI usually last on antibiotics?",
+          "expected": [
+            "antibiotic",
+            "uti"
+          ],
+          "predicted": [
+            "antibiotic",
+            "uti"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q011",
+          "text": "I keep getting migraines with nausea and blurry vision.",
+          "expected": [
+            "blurred_vision",
+            "migraine",
+            "nausea"
+          ],
+          "predicted": [
+            "blurred_vision",
+            "migraine",
+            "nausea"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q012",
+          "text": "What's a normal cholesterol level? My LDL is 160.",
+          "expected": [
+            "cholesterol_test"
+          ],
+          "predicted": [
+            "cholesterol_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q013",
+          "text": "I think I have diabetis, I'm always thirsty and peeing a lot.",
+          "expected": [
+            "diabetes",
+            "excessive_thirst",
+            "frequent_urination"
+          ],
+          "predicted": [
+            "diabetes",
+            "excessive_thirst",
+            "frequent_urination"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling",
+            "lay"
+          ]
+        },
+        {
+          "id": "q014",
+          "text": "Can I take tylenol and advil together for a headache?",
+          "expected": [
+            "acetaminophen",
+            "headache",
+            "ibuprofen"
+          ],
+          "predicted": [
+            "acetaminophen",
+            "headache",
+            "ibuprofen"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q015",
+          "text": "My son has asthma. When should he use his rescue inhaler?",
+          "expected": [
+            "albuterol",
+            "asthma"
+          ],
+          "predicted": [
+            "albuterol",
+            "asthma"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q016",
+          "text": "I've had lower back pain for weeks and now tingling down my leg. Could it be sciatica?",
+          "expected": [
+            "back_pain",
+            "numbness",
+            "sciatica"
+          ],
+          "predicted": [
+            "back_pain",
+            "numbness",
+            "sciatica"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q017",
+          "text": "What does an echocardiogram show that an EKG doesn't?",
+          "expected": [
+            "ecg",
+            "echocardiogram"
+          ],
+          "predicted": [
+            "ecg",
+            "echocardiogram"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q018",
+          "text": "Denies chest pain or shortness of breath, reports mild fatigue.",
+          "expected": [
+            "chest_pain",
+            "fatigue",
+            "shortness_of_breath"
+          ],
+          "predicted": [
+            "chest_pain",
+            "fatigue",
+            "shortness_of_breath"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q019",
+          "text": "How long is recovery after a knee replacement?",
+          "expected": [
+            "knee_replacement"
+          ],
+          "predicted": [
+            "knee_replacement"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q020",
+          "text": "I tore my ACL playing soccer. Do I need ACL surgery or just physical therapy?",
+          "expected": [
+            "acl",
+            "acl_reconstruction",
+            "physical_therapy"
+          ],
+          "predicted": [
+            "acl",
+            "acl_reconstruction",
+            "physical_therapy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure",
+            "anatomy"
+          ]
+        },
+        {
+          "id": "q021",
+          "text": "Is omeprazole safe to take every day for acid reflux?",
+          "expected": [
+            "gerd",
+            "omeprazole"
+          ],
+          "predicted": [
+            "gerd",
+            "omeprazole"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q022",
+          "text": "What are the early signs of Parkinson's disease?",
+          "expected": [
+            "parkinsons"
+          ],
+          "predicted": [
+            "parkinsons"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q023",
+          "text": "My mom has dementia and keeps getting confused at night.",
+          "expected": [
+            "confusion",
+            "dementia"
+          ],
+          "predicted": [
+            "confusion",
+            "dementia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q024",
+          "text": "Can anxiety cause heart palpitations?",
+          "expected": [
+            "anxiety",
+            "palpitations"
+          ],
+          "predicted": [
+            "anxiety",
+            "palpitations"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        },
+        {
+          "id": "q025",
+          "text": "I ran 5 mi this morning and my knees are fine. Any tips for marathon training?",
+          "expected": [],
+          "predicted": [
+            "knee"
+          ],
+          "false_positives": [
+            "knee"
+          ],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "distractor"
+          ]
+        },
+        {
+          "id": "q026",
+          "text": "What's the best way to stay motivated to exercise in the winter?",
+          "expected": [],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "no_terms"
+          ]
+        },
+        {
+          "id": "q027",
+          "text": "I got a flu shot yesterday and now my arm is sore. Is that normal?",
+          "expected": [
+            "vaccine"
+          ],
+          "predicted": [
+            "vaccine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "sore arm"
+          ],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q028",
+          "text": "What is the difference between osteoarthritis and rheumatoid arthritis?",
+          "expected": [
+            "osteoarthritis",
+            "rheumatoid_arthritis"
+          ],
+          "predicted": [
+            "osteoarthritis",
+            "rheumatoid_arthritis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q029",
+          "text": "Should I worry about a CBC showing low hemoglobin?",
+          "expected": [
+            "anemia",
+            "cbc"
+          ],
+          "predicted": [
+            "anemia",
+            "cbc"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q030",
+          "text": "My doctor wants me to get a colonoscopy because of blood in my stool.",
+          "expected": [
+            "blood_in_stool",
+            "colonoscopy"
+          ],
+          "predicted": [
+            "blood_in_stool",
+            "colonoscopy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q031",
+          "text": "Does semaglutide help with weight loss if you don't have diabetes?",
+          "expected": [
+            "diabetes",
+            "glp1_agonist",
+            "weight_loss"
+          ],
+          "predicted": [
+            "diabetes",
+            "glp1_agonist",
+            "weight_loss"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "medication"
+          ]
+        },
+        {
+          "id": "q032",
+          "text": "What causes kidney stones and how do you pass them?",
+          "expected": [
+            "kidney_stones"
+          ],
+          "predicted": [
+            "kidney_stones"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q033",
+          "text": "I have hypothyroidism and take levothyroxine. Should I take it with food?",
+          "expected": [
+            "hypothyroidism",
+            "levothyroxine"
+          ],
+          "predicted": [
+            "hypothyroidism",
+            "levothyroxine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q034",
+          "text": "Woke up with a stuffy nose, chills and body aches. Covid or the flu?",
+          "expected": [
+            "chills",
+            "covid_19",
+            "influenza",
+            "muscle_pain",
+            "nasal_congestion"
+          ],
+          "predicted": [
+            "chills",
+            "covid_19",
+            "influenza",
+            "muscle_pain",
+            "nasal_congestion"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q035",
+          "text": "What are the side effects of prednisone?",
+          "expected": [
+            "corticosteroid"
+          ],
+          "predicted": [
+            "corticosteroid"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q036",
+          "text": "My father has COPD and uses oxygen at home. Is pneumonia a big risk?",
+          "expected": [
+            "copd",
+            "pneumonia"
+          ],
+          "predicted": [
+            "copd",
+            "pneumonia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "oxygen therapy"
+          ],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q037",
+          "text": "I've been feeling depressed and can't sleep. Would an antidepressant help?",
+          "expected": [
+            "antidepressant",
+            "depression",
+            "insomnia"
+          ],
+          "predicted": [
+            "antidepressant",
+            "depression",
+            "insomnia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q038",
+          "text": "What is atrial fibrillation and why does it increase stroke risk?",
+          "expected": [
+            "atrial_fibrillation",
+            "stroke"
+          ],
+          "predicted": [
+            "atrial_fibrillation",
+            "stroke"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q039",
+          "text": "I have a burning feeling when I pee and need to go constantly.",
+          "expected": [
+            "frequent_urination",
+            "painful_urination"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "frequent_urination",
+            "painful_urination"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q040",
+          "text": "Is gabapentin addictive? I take it for nerve pain.",
+          "expected": [
+            "gabapentin"
+          ],
+          "predicted": [
+            "gabapentin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "nerve pain"
+          ],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q041",
+          "text": "My toddler threw up twice and has diarrhea. How do I prevent dehydration?",
+          "expected": [
+            "dehydration",
+            "diarrhea",
+            "vomiting"
+          ],
+          "predicted": [
+            "dehydration",
+            "diarrhea",
+            "vomiting"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q042",
+          "text": "Can a herniated disc heal without surgery?",
+          "expected": [
+            "herniated_disc",
+            "surgery"
+          ],
+          "predicted": [
+            "herniated_disc",
+            "surgery"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "surgery"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q043",
+          "text": "What's the recovery like after gallbladder removal?",
+          "expected": [
+            "cholecystectomy"
+          ],
+          "predicted": [
+            "cholecystectomy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "procedure"
+          ]
+        },
+        {
+          "id": "q044",
+          "text": "I'm allergic to penicillin. What other antibiotics can I take for strep throat?",
+          "expected": [
+            "allergy",
+            "antibiotic",
+            "strep_throat"
+          ],
+          "predicted": [
+            "allergy",
+            "antibiotic",
+            "strep_throat"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q045",
+          "text": "What does a high TSH mean on a thyroid test?",
+          "expected": [
+            "thyroid_test"
+          ],
+          "predicted": [
+            "thyroid_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab",
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q046",
+          "text": "Does GERD cause chest pain that feels like a heart attack?",
+          "expected": [
+            "chest_pain",
+            "gerd",
+            "myocardial_infarction"
+          ],
+          "predicted": [
+            "chest_pain",
+            "gerd",
+            "myocardial_infarction"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q047",
+          "text": "Rash on both arms that is very itchy, no fever. Could it be eczema?",
+          "expected": [
+            "eczema",
+            "fever",
+            "itching",
+            "rash"
+          ],
+          "predicted": [
+            "eczema",
+            "fever",
+            "itching",
+            "rash"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation"
+          ]
+        },
+        {
+          "id": "q048",
+          "text": "How do statins lower cholesterol?",
+          "expected": [
+            "cholesterol_test",
+            "statin"
+          ],
+          "predicted": [
+            "cholesterol_test",
+            "statin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q049",
+          "text": "My grandmother broke her hip and they found osteoporosis.",
+          "expected": [
+            "fracture",
+            "osteoporosis"
+          ],
+          "predicted": [
+            "osteoporosis"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "fracture"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q050",
+          "text": "What is the normal resting heart rate for adults?",
+          "expected": [
+            "heart_rate"
+          ],
+          "predicted": [
+            "heart_rate"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q051",
+          "text": "I have IBS and get bloated after meals. Any diet tips?",
+          "expected": [
+            "bloating",
+            "ibs"
+          ],
+          "predicted": [
+            "bloating",
+            "ibs"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q052",
+          "text": "Can you get shingles twice?",
+          "expected": [
+            "shingles"
+          ],
+          "predicted": [
+            "shingles"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q053",
+          "text": "Started lisinoprill last week and now I have a dry cough.",
+          "expected": [
+            "cough",
+            "lisinopril"
+          ],
+          "predicted": [
+            "cough",
+            "lisinopril"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling"
+          ]
+        },
+        {
+          "id": "q054",
+          "text": "My ankles are swollen at the end of the day. Is that heart failure?",
+          "expected": [
+            "edema",
+            "heart_failure"
+          ],
+          "predicted": [
+            "heart_failure"
+          ],
+          "false_positives": [],
+          "false_negatives": [
+            "edema"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q055",
+          "text": "What should I expect during chemo for breast cancer?",
+          "expected": [
+            "cancer",
+            "chemotherapy"
+          ],
+          "predicted": [
+            "cancer",
+            "chemotherapy"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q056",
+          "text": "Is it safe to drink alcohol while taking xanax?",
+          "expected": [
+            "benzodiazepine"
+          ],
+          "predicted": [
+            "benzodiazepine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "alcohol"
+          ],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q057",
+          "text": "Hx of CAD s/p CABG, now with new onset AF.",
+          "expected": [
+            "atrial_fibrillation",
+            "bypass_surgery",
+            "coronary_artery_disease"
+          ],
+          "predicted": [
+            "atrial_fibrillation",
+            "bypass_surgery",
+            "coronary_artery_disease"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q058",
+          "text": "What does it mean when your urine test shows protein?",
+          "expected": [
+            "urinalysis"
+          ],
+          "predicted": [
+            "urinalysis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "proteinuria"
+          ],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q059",
+          "text": "I fainted in the shower this morning and felt lightheaded before.",
+          "expected": [
+            "dizziness",
+            "syncope"
+          ],
+          "predicted": [
+            "dizziness",
+            "syncope"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q060",
+          "text": "Do I need a prescription for an EpiPen if I have a peanut allergy?",
+          "expected": [
+            "allergy",
+            "epinephrine"
+          ],
+          "predicted": [
+            "allergy",
+            "epinephrine"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "brand"
+          ]
+        },
+        {
+          "id": "q061",
+          "text": "Can sleep apnea cause high blood pressure?",
+          "expected": [
+            "hypertension",
+            "sleep_apnea"
+          ],
+          "predicted": [
+            "hypertension",
+            "sleep_apnea"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q062",
+          "text": "What's the difference between a cold and a sinus infection?",
+          "expected": [
+            "common_cold",
+            "sinusitis"
+          ],
+          "predicted": [
+            "common_cold",
+            "sinusitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q063",
+          "text": "My kid has pink eye. How contagious is it?",
+          "expected": [
+            "conjunctivitis"
+          ],
+          "predicted": [
+            "conjunctivitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q064",
+          "text": "I take warfarin. Which foods should I avoid?",
+          "expected": [
+            "warfarin"
+          ],
+          "predicted": [
+            "warfarin"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q065",
+          "text": "Without any symptoms, should I still get a mammogram at 40?",
+          "expected": [
+            "mammogram"
+          ],
+          "predicted": [
+            "mammogram"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "mammogram"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "q066",
+          "text": "Is gout related to what you eat?",
+          "expected": [
+            "gout"
+          ],
+          "predicted": [
+            "gout"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q067",
+          "text": "Severe stomach pain on the lower right side. Could it be appendicitis?",
+          "expected": [
+            "abdominal_pain",
+            "appendicitis"
+          ],
+          "predicted": [
+            "abdominal_pain",
+            "appendicitis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q068",
+          "text": "My blood sugar drops in the afternoon and I get shaky. Is that hypoglycemia?",
+          "expected": [
+            "blood_glucose",
+            "hypoglycemia"
+          ],
+          "predicted": [
+            "blood_glucose",
+            "hypoglycemia"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "shakiness"
+          ],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q069",
+          "text": "What is a normal BMI and is it accurate for athletes?",
+          "expected": [
+            "bmi"
+          ],
+          "predicted": [
+            "bmi"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q070",
+          "text": "I have psoriasis on my elbows. Do steroid creams help?",
+          "expected": [
+            "corticosteroid",
+            "psoriasis"
+          ],
+          "predicted": [
+            "corticosteroid",
+            "psoriasis"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q071",
+          "text": "Can a concussion cause headaches weeks later?",
+          "expected": [
+            "concussion",
+            "headache"
+          ],
+          "predicted": [
+            "concussion",
+            "headache"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q072",
+          "text": "Patient negative for COVID, presents with wheezing and productive cough.",
+          "expected": [
+            "cough",
+            "covid_19",
+            "wheezing"
+          ],
+          "predicted": [
+            "cough",
+            "covid_19",
+            "wheezing"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [
+            "cough",
+            "wheezing"
+          ],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation",
+            "clinical"
+          ]
+        },
+        {
+          "id": "q073",
+          "text": "Do I need to fast before a lipid panel?",
+          "expected": [
+            "cholesterol_test"
+          ],
+          "predicted": [
+            "cholesterol_test"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q074",
+          "text": "How is chronic kidney disease staged?",
+          "expected": [
+            "ckd"
+          ],
+          "predicted": [
+            "ckd"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q075",
+          "text": "What does a pulmonary embolism feel like?",
+          "expected": [
+            "pulmonary_embolism"
+          ],
+          "predicted": [
+            "pulmonary_embolism"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q076",
+          "text": "My heart keeps racing even when I'm sitting still.",
+          "expected": [
+            "palpitations"
+          ],
+          "predicted": [
+            "heart"
+          ],
+          "false_positives": [
+            "heart"
+          ],
+          "false_negatives": [
+            "palpitations"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q077",
+          "text": "Is acetominophen hard on the liver?",
+          "expected": [
+            "acetaminophen",
+            "liver"
+          ],
+          "predicted": [
+            "acetaminophen",
+            "liver"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "misspelling"
+          ]
+        },
+        {
+          "id": "q078",
+          "text": "I've been coughing up yellow phlegm for a week. Do I need antibiotics?",
+          "expected": [
+            "antibiotic",
+            "cough"
+          ],
+          "predicted": [
+            "antibiotic",
+            "cough"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "sputum"
+          ],
+          "tags": [
+            "lay"
+          ]
+        },
+        {
+          "id": "q079",
+          "text": "What are good questions to ask my new primary care doctor at a checkup?",
+          "expected": [],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "no_terms"
+          ]
+        },
+        {
+          "id": "q080",
+          "text": "Can Crohn's disease affect the joints?",
+          "expected": [
+            "ibd"
+          ],
+          "predicted": [
+            "ibd"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q081",
+          "text": "I was told I have prediabetes. Can I reverse it?",
+          "expected": [
+            "prediabetes"
+          ],
+          "predicted": [
+            "prediabetes"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "condition"
+          ]
+        },
+        {
+          "id": "q082",
+          "text": "How do I know if a cut is infected? It's red and warm around the edges.",
+          "expected": [
+            "cellulitis"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "cellulitis"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "wound infection"
+          ],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q083",
+          "text": "My numbers: BP 128/82, HR 72, fasting glucose 102.",
+          "expected": [
+            "blood_glucose",
+            "blood_pressure",
+            "heart_rate"
+          ],
+          "predicted": [
+            "blood_glucose",
+            "blood_pressure",
+            "heart_rate"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "abbreviation",
+            "lab"
+          ]
+        },
+        {
+          "id": "q084",
+          "text": "Does tramadol show up as an opioid on a drug test?",
+          "expected": [
+            "opioid"
+          ],
+          "predicted": [
+            "opioid"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "drug test"
+          ],
+          "tags": [
+            "medication"
+          ]
+        },
+        {
+          "id": "q085",
+          "text": "Is it MS or just a pinched nerve? My hands go numb.",
+          "expected": [
+            "multiple_sclerosis",
+            "numbness"
+          ],
+          "predicted": [
+            "multiple_sclerosis",
+            "numbness"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [
+            "pinched nerve"
+          ],
+          "tags": [
+            "abbreviation"
+          ]
+        },
+        {
+          "id": "q086",
+          "text": "Can I exercise with a stent after angioplasty?",
+          "expected": [
+            "angioplasty"
+          ],
+          "predicted": [
+            "angioplasty"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "procedure"
+          ]
+        },
+        {
+          "id": "q087",
+          "text": "My stomach hurts after I eat spicy food.",
+          "expected": [
+            "abdominal_pain"
+          ],
+          "predicted": [],
+          "false_positives": [],
+          "false_negatives": [
+            "abdominal_pain"
+          ],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lay",
+            "hard"
+          ]
+        },
+        {
+          "id": "q088",
+          "text": "What is a normal creatinine level for kidney function?",
+          "expected": [
+            "kidneys",
+            "metabolic_panel"
+          ],
+          "predicted": [
+            "kidneys",
+            "metabolic_panel"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "lab"
+          ]
+        },
+        {
+          "id": "q089",
+          "text": "I don't have high blood pressure but my doctor still prescribed a beta blocker for anxiety.",
+          "expected": [
+            "anxiety",
+            "hypertension",
+            "metoprolol"
+          ],
+          "predicted": [
+            "anxiety",
+            "hypertension",
+            "metoprolol"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "negation"
+          ]
+        },
+        {
+          "id": "q090",
+          "text": "Night sweats and losing weight without trying \u2014 should I be worried?",
+          "expected": [
+            "night_sweats",
+            "weight_loss"
+          ],
+          "predicted": [
+            "night_sweats",
+            "weight_loss"
+          ],
+          "false_positives": [],
+          "false_negatives": [],
+          "negation_errors": [],
+          "out_of_lexicon": [],
+          "tags": [
+            "symptom"
+          ]
+        }
+      ]
+    }
+  }
+}
